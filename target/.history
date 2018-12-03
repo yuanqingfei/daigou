@@ -1,0 +1,19 @@
+ls
+fastOptJS
+~fastOptJS
+reload
+~fastOptJS
+show discoveredMainClasses
+sbt fastOptJS
+sbt
+fastOptJS
+~fastOptJS
+clean
+evicted
+fastOptJS
+~fastOptJS
+start
+list
+commands
+info
+run
