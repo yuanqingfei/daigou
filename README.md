@@ -2,8 +2,13 @@
 
 Try to write a web app can be used create an order.
 
+```scala
+sbt indexHtml
+```
+
 ## 2018/12/02
 finish the initial setup.
 
-TODO: 1) resolve how to use generated js elegantely instead of specifying target one directly.
-      2) design the order page, order list page,etc. 
+## 2019/02/27
+change structure by reference [TODO APP](https://github.com/ThoughtWorksInc/todo)
+
