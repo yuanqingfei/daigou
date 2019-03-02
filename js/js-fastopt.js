@@ -1121,18 +1121,6 @@ function $isArrayOf_Lcom_thoughtworks_binding_Binding$BindingSeq(obj, depth) {
 function $asArrayOf_Lcom_thoughtworks_binding_Binding$BindingSeq(obj, depth) {
   return (($isArrayOf_Lcom_thoughtworks_binding_Binding$BindingSeq(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lcom.thoughtworks.binding.Binding$BindingSeq;", depth))
 }
-function $is_Lcom_thoughtworks_binding_Binding$ChangedListener(obj) {
-  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lcom_thoughtworks_binding_Binding$ChangedListener)))
-}
-function $as_Lcom_thoughtworks_binding_Binding$ChangedListener(obj) {
-  return (($is_Lcom_thoughtworks_binding_Binding$ChangedListener(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "com.thoughtworks.binding.Binding$ChangedListener"))
-}
-function $isArrayOf_Lcom_thoughtworks_binding_Binding$ChangedListener(obj, depth) {
-  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lcom_thoughtworks_binding_Binding$ChangedListener)))
-}
-function $asArrayOf_Lcom_thoughtworks_binding_Binding$ChangedListener(obj, depth) {
-  return (($isArrayOf_Lcom_thoughtworks_binding_Binding$ChangedListener(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lcom.thoughtworks.binding.Binding$ChangedListener;", depth))
-}
 function $is_Lcom_thoughtworks_binding_Binding$PatchedListener(obj) {
   return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lcom_thoughtworks_binding_Binding$PatchedListener)))
 }
@@ -1523,413 +1511,6 @@ function $f_sci_VectorPointer__initFrom__sci_VectorPointer__I__V($thiz, that, de
   }
 }
 /** @constructor */
-function $c_LMain$() {
-  $c_O.call(this)
-}
-$c_LMain$.prototype = new $h_O();
-$c_LMain$.prototype.constructor = $c_LMain$;
-/** @constructor */
-function $h_LMain$() {
-  /*<skip>*/
-}
-$h_LMain$.prototype = $c_LMain$.prototype;
-$c_LMain$.prototype.init___ = (function() {
-  return this
-});
-$c_LMain$.prototype.bindingButton__LMain$Contact__Lcom_thoughtworks_binding_Binding = (function(contact) {
-  var partialAppliedMonadic$macro$2 = $m_Lcom_thoughtworks_binding_Binding$();
-  var this$1 = $m_Lcom_thoughtworks_binding_dom$Runtime$TagsAndTags2$();
-  var htmlElement$macro$1 = this$1.button__Lscalatags_JsDom$TypedTag().render__Lorg_scalajs_dom_raw_Element();
-  var array = [$m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createTextNode("\n        Modify the name\n        ")];
-  var childrenBinding = new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array);
-  var fa$1 = new $c_Lcom_thoughtworks_binding_dom$Runtime$NodeSeqMountPoint().init___Lorg_scalajs_dom_raw_Node__Lcom_thoughtworks_binding_Binding$BindingSeq(htmlElement$macro$1, childrenBinding);
-  var f$1 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this, partialAppliedMonadic$macro$2$1, contact$1, htmlElement$macro$1$1) {
-    return (function(element$macro$3$2) {
-      $asUnit(element$macro$3$2);
-      var partialAppliedMonadic$macro$1 = $m_Lcom_thoughtworks_binding_Binding$();
-      var newValue$macro$3 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$1, contact$1$1) {
-        return (function(event$2) {
-          contact$1$1.name$1.value$und$eq__O__V("Modified Name")
-        })
-      })($this, contact$1));
-      var fa = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(($this.assignAttribute$macro$2$1__p1__Lorg_scalajs_dom_raw_HTMLButtonElement__F1__V(htmlElement$macro$1$1, newValue$macro$3), (void 0))));
-      var a = fa.value$1;
-      var element$macro$4 = $as_Lcom_thoughtworks_binding_Binding(a);
-      var f = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$2, htmlElement$macro$1$1$1) {
-        return (function(element$macro$5$2) {
-          $asUnit(element$macro$5$2);
-          return htmlElement$macro$1$1$1
-        })
-      })($this, htmlElement$macro$1$1));
-      if ($is_Lcom_thoughtworks_binding_Binding$Constant(element$macro$4)) {
-        var x2 = $as_Lcom_thoughtworks_binding_Binding$Constant(element$macro$4);
-        var a$1 = x2.value$1;
-        return new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(f.apply__O__O(a$1))
-      } else {
-        return new $c_Lcom_thoughtworks_binding_Binding$Map().init___Lcom_thoughtworks_binding_Binding__F1(element$macro$4, f)
-      }
-    })
-  })(this, partialAppliedMonadic$macro$2, contact, htmlElement$macro$1));
-  return new $c_Lcom_thoughtworks_binding_Binding$FlatMap().init___Lcom_thoughtworks_binding_Binding__F1(fa$1, f$1)
-});
-$c_LMain$.prototype.assignAttribute$macro$2$1__p1__Lorg_scalajs_dom_raw_HTMLButtonElement__F1__V = (function(htmlElement$macro$1$1, newValue$macro$3$1) {
-  var left = htmlElement$macro$1$1.onclick;
-  if ((!$m_sr_BoxesRunTime$().equals__O__O__Z(left, newValue$macro$3$1))) {
-    htmlElement$macro$1$1.onclick = (function(f) {
-      return (function(arg1) {
-        return f.apply__O__O(arg1)
-      })
-    })(newValue$macro$3$1)
-  }
-});
-$c_LMain$.prototype.main__Lorg_scalajs_dom_raw_Node__V = (function(container) {
-  var array = [new $c_LMain$Contact().init___Lcom_thoughtworks_binding_Binding$Var__Lcom_thoughtworks_binding_Binding$Var(new $c_Lcom_thoughtworks_binding_Binding$Var().init___O("Yang Bo"), new $c_Lcom_thoughtworks_binding_Binding$Var().init___O("yang.bo@rea-group.com"))];
-  var data = new $c_Lcom_thoughtworks_binding_Binding$Vars().init___sjs_js_Array(array);
-  var child = this.bindingTable__Lcom_thoughtworks_binding_Binding$BindingSeq__Lcom_thoughtworks_binding_Binding(data);
-  var this$11 = new $c_Lcom_thoughtworks_binding_dom$Runtime$NodeMountPoint().init___Lorg_scalajs_dom_raw_Node__Lcom_thoughtworks_binding_Binding(container, child);
-  if ((this$11.com$thoughtworks$binding$Binding$MountPoint$$referenceCount$1 === 0)) {
-    this$11.mount__V()
-  };
-  this$11.com$thoughtworks$binding$Binding$MountPoint$$referenceCount$1 = ((1 + this$11.com$thoughtworks$binding$Binding$MountPoint$$referenceCount$1) | 0)
-});
-$c_LMain$.prototype.bindingTr__LMain$Contact__Lcom_thoughtworks_binding_Binding = (function(contact) {
-  var partialAppliedMonadic$macro$17 = $m_Lcom_thoughtworks_binding_Binding$();
-  var this$1 = $m_Lcom_thoughtworks_binding_dom$Runtime$TagsAndTags2$();
-  var htmlElement$macro$4 = this$1.tr__Lscalatags_JsDom$TypedTag().render__Lorg_scalajs_dom_raw_Element();
-  var partialAppliedMonadic$macro$1 = $m_Lcom_thoughtworks_binding_Binding$();
-  var array = [$m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createTextNode("\n            ")];
-  var fa = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array)));
-  var a = fa.value$1;
-  var element$macro$18 = $as_Lcom_thoughtworks_binding_Binding(a);
-  var partialAppliedMonadic$macro$2 = $m_Lcom_thoughtworks_binding_Binding$();
-  var this$12 = $m_Lcom_thoughtworks_binding_dom$Runtime$TagsAndTags2$();
-  var htmlElement$macro$5 = this$12.td__Lscalatags_JsDom$TypedTag().render__Lorg_scalajs_dom_raw_Element();
-  var fa$2 = contact.name$1;
-  var f$1 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this, partialAppliedMonadic$macro$2$2, htmlElement$macro$5$1) {
-    return (function(element$macro$3$2) {
-      var element$macro$3 = $as_T(element$macro$3$2);
-      var array$1 = [$m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createTextNode(element$macro$3)];
-      var childrenBinding = new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$1);
-      var fa$1 = new $c_Lcom_thoughtworks_binding_dom$Runtime$NodeSeqMountPoint().init___Lorg_scalajs_dom_raw_Node__Lcom_thoughtworks_binding_Binding$BindingSeq(htmlElement$macro$5$1, childrenBinding);
-      var f = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$1, htmlElement$macro$5$1$1) {
-        return (function(element$macro$4$2) {
-          $asUnit(element$macro$4$2);
-          return htmlElement$macro$5$1$1
-        })
-      })($this, htmlElement$macro$5$1));
-      return new $c_Lcom_thoughtworks_binding_Binding$Map().init___Lcom_thoughtworks_binding_Binding__F1(fa$1, f)
-    })
-  })(this, partialAppliedMonadic$macro$2, htmlElement$macro$5));
-  if ($is_Lcom_thoughtworks_binding_Binding$Constant(fa$2)) {
-    var x2 = $as_Lcom_thoughtworks_binding_Binding$Constant(fa$2);
-    var a$1 = x2.value$1;
-    var jsx$1 = $as_Lcom_thoughtworks_binding_Binding(f$1.apply__O__O(a$1))
-  } else {
-    var jsx$1 = new $c_Lcom_thoughtworks_binding_Binding$FlatMap().init___Lcom_thoughtworks_binding_Binding__F1(fa$2, f$1)
-  };
-  var fa$3 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(jsx$1);
-  var a$2 = fa$3.value$1;
-  var element$macro$19 = $as_Lcom_thoughtworks_binding_Binding(a$2);
-  var f$2 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$2) {
-    return (function(element$macro$5$2) {
-      var array$2 = [element$macro$5$2];
-      return new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$2)
-    })
-  })(this));
-  if ($is_Lcom_thoughtworks_binding_Binding$Constant(element$macro$19)) {
-    var x2$1 = $as_Lcom_thoughtworks_binding_Binding$Constant(element$macro$19);
-    var a$3 = x2$1.value$1;
-    var jsx$2 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(f$2.apply__O__O(a$3))
-  } else {
-    var jsx$2 = new $c_Lcom_thoughtworks_binding_Binding$Map().init___Lcom_thoughtworks_binding_Binding__F1(element$macro$19, f$2)
-  };
-  var fa$4 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(jsx$2);
-  var a$4 = fa$4.value$1;
-  var element$macro$20 = $as_Lcom_thoughtworks_binding_Binding(a$4);
-  var partialAppliedMonadic$macro$6 = $m_Lcom_thoughtworks_binding_Binding$();
-  var array$3 = [$m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createTextNode("\n            ")];
-  var fa$5 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$3)));
-  var a$5 = fa$5.value$1;
-  var element$macro$21 = $as_Lcom_thoughtworks_binding_Binding(a$5);
-  var partialAppliedMonadic$macro$7 = $m_Lcom_thoughtworks_binding_Binding$();
-  var this$44 = $m_Lcom_thoughtworks_binding_dom$Runtime$TagsAndTags2$();
-  var htmlElement$macro$6 = this$44.td__Lscalatags_JsDom$TypedTag().render__Lorg_scalajs_dom_raw_Element();
-  var fa$7 = contact.email$1;
-  var f$4 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$3, partialAppliedMonadic$macro$7$1, htmlElement$macro$6$1) {
-    return (function(element$macro$8$2) {
-      var element$macro$8 = $as_T(element$macro$8$2);
-      var array$4 = [$m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createTextNode(element$macro$8)];
-      var childrenBinding$1 = new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$4);
-      var fa$6 = new $c_Lcom_thoughtworks_binding_dom$Runtime$NodeSeqMountPoint().init___Lorg_scalajs_dom_raw_Node__Lcom_thoughtworks_binding_Binding$BindingSeq(htmlElement$macro$6$1, childrenBinding$1);
-      var f$3 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$4, htmlElement$macro$6$1$1) {
-        return (function(element$macro$9$2) {
-          $asUnit(element$macro$9$2);
-          return htmlElement$macro$6$1$1
-        })
-      })($this$3, htmlElement$macro$6$1));
-      return new $c_Lcom_thoughtworks_binding_Binding$Map().init___Lcom_thoughtworks_binding_Binding__F1(fa$6, f$3)
-    })
-  })(this, partialAppliedMonadic$macro$7, htmlElement$macro$6));
-  if ($is_Lcom_thoughtworks_binding_Binding$Constant(fa$7)) {
-    var x2$2 = $as_Lcom_thoughtworks_binding_Binding$Constant(fa$7);
-    var a$6 = x2$2.value$1;
-    var jsx$3 = $as_Lcom_thoughtworks_binding_Binding(f$4.apply__O__O(a$6))
-  } else {
-    var jsx$3 = new $c_Lcom_thoughtworks_binding_Binding$FlatMap().init___Lcom_thoughtworks_binding_Binding__F1(fa$7, f$4)
-  };
-  var fa$8 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(jsx$3);
-  var a$7 = fa$8.value$1;
-  var element$macro$22 = $as_Lcom_thoughtworks_binding_Binding(a$7);
-  var f$5 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$5) {
-    return (function(element$macro$10$2) {
-      var array$5 = [element$macro$10$2];
-      return new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$5)
-    })
-  })(this));
-  if ($is_Lcom_thoughtworks_binding_Binding$Constant(element$macro$22)) {
-    var x2$3 = $as_Lcom_thoughtworks_binding_Binding$Constant(element$macro$22);
-    var a$8 = x2$3.value$1;
-    var jsx$4 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(f$5.apply__O__O(a$8))
-  } else {
-    var jsx$4 = new $c_Lcom_thoughtworks_binding_Binding$Map().init___Lcom_thoughtworks_binding_Binding__F1(element$macro$22, f$5)
-  };
-  var fa$9 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(jsx$4);
-  var a$9 = fa$9.value$1;
-  var element$macro$23 = $as_Lcom_thoughtworks_binding_Binding(a$9);
-  var partialAppliedMonadic$macro$11 = $m_Lcom_thoughtworks_binding_Binding$();
-  var array$6 = [$m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createTextNode("\n            ")];
-  var fa$10 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$6)));
-  var a$10 = fa$10.value$1;
-  var element$macro$24 = $as_Lcom_thoughtworks_binding_Binding(a$10);
-  var partialAppliedMonadic$macro$12 = $m_Lcom_thoughtworks_binding_Binding$();
-  var this$76 = $m_Lcom_thoughtworks_binding_dom$Runtime$TagsAndTags2$();
-  var htmlElement$macro$7 = this$76.td__Lscalatags_JsDom$TypedTag().render__Lorg_scalajs_dom_raw_Element();
-  var fa$12 = $m_LMain$().bindingButton__LMain$Contact__Lcom_thoughtworks_binding_Binding(contact);
-  var f$7 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$6, partialAppliedMonadic$macro$12$1, htmlElement$macro$7$1) {
-    return (function(element$macro$13$2) {
-      var array$7 = [element$macro$13$2];
-      var childrenBinding$2 = new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$7);
-      var fa$11 = new $c_Lcom_thoughtworks_binding_dom$Runtime$NodeSeqMountPoint().init___Lorg_scalajs_dom_raw_Node__Lcom_thoughtworks_binding_Binding$BindingSeq(htmlElement$macro$7$1, childrenBinding$2);
-      var f$6 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$7, htmlElement$macro$7$1$1) {
-        return (function(element$macro$14$2) {
-          $asUnit(element$macro$14$2);
-          return htmlElement$macro$7$1$1
-        })
-      })($this$6, htmlElement$macro$7$1));
-      return new $c_Lcom_thoughtworks_binding_Binding$Map().init___Lcom_thoughtworks_binding_Binding__F1(fa$11, f$6)
-    })
-  })(this, partialAppliedMonadic$macro$12, htmlElement$macro$7));
-  if ($is_Lcom_thoughtworks_binding_Binding$Constant(fa$12)) {
-    var x2$4 = $as_Lcom_thoughtworks_binding_Binding$Constant(fa$12);
-    var a$11 = x2$4.value$1;
-    var jsx$5 = $as_Lcom_thoughtworks_binding_Binding(f$7.apply__O__O(a$11))
-  } else {
-    var jsx$5 = new $c_Lcom_thoughtworks_binding_Binding$FlatMap().init___Lcom_thoughtworks_binding_Binding__F1(fa$12, f$7)
-  };
-  var fa$13 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(jsx$5);
-  var a$12 = fa$13.value$1;
-  var element$macro$25 = $as_Lcom_thoughtworks_binding_Binding(a$12);
-  var f$8 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$8) {
-    return (function(element$macro$15$2) {
-      var array$8 = [element$macro$15$2];
-      return new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$8)
-    })
-  })(this));
-  if ($is_Lcom_thoughtworks_binding_Binding$Constant(element$macro$25)) {
-    var x2$5 = $as_Lcom_thoughtworks_binding_Binding$Constant(element$macro$25);
-    var a$13 = x2$5.value$1;
-    var jsx$6 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(f$8.apply__O__O(a$13))
-  } else {
-    var jsx$6 = new $c_Lcom_thoughtworks_binding_Binding$Map().init___Lcom_thoughtworks_binding_Binding__F1(element$macro$25, f$8)
-  };
-  var fa$14 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(jsx$6);
-  var a$14 = fa$14.value$1;
-  var element$macro$26 = $as_Lcom_thoughtworks_binding_Binding(a$14);
-  var partialAppliedMonadic$macro$16 = $m_Lcom_thoughtworks_binding_Binding$();
-  var array$9 = [$m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createTextNode("\n        ")];
-  var fa$15 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$9)));
-  var a$15 = fa$15.value$1;
-  var element$macro$27 = $as_Lcom_thoughtworks_binding_Binding(a$15);
-  var fa$16 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$9) {
-    return (function(x$2) {
-      var x = $as_Lcom_thoughtworks_binding_Binding(x$2);
-      return x
-    })
-  })(this)));
-  var a$16 = fa$16.value$1;
-  var element$macro$28 = $as_F1(a$16);
-  var array$10 = [element$macro$18, element$macro$20, element$macro$21, element$macro$23, element$macro$24, element$macro$26, element$macro$27];
-  var this$117 = new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$10);
-  var childrenBinding$3 = new $c_Lcom_thoughtworks_binding_Binding$BindingSeq$FlatMap().init___Lcom_thoughtworks_binding_Binding$BindingSeq__F1(new $c_Lcom_thoughtworks_binding_Binding$BindingSeq$MapBinding().init___Lcom_thoughtworks_binding_Binding$BindingSeq__F1(this$117, element$macro$28), new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$10) {
-    return (function(x$2$1) {
-      var x$1 = $as_Lcom_thoughtworks_binding_Binding$BindingSeq(x$2$1);
-      return x$1
-    })
-  })(this$117)));
-  var fa$17 = new $c_Lcom_thoughtworks_binding_dom$Runtime$NodeSeqMountPoint().init___Lorg_scalajs_dom_raw_Node__Lcom_thoughtworks_binding_Binding$BindingSeq(htmlElement$macro$4, childrenBinding$3);
-  var f$9 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$11, htmlElement$macro$4$1) {
-    return (function(element$macro$29$2) {
-      $asUnit(element$macro$29$2);
-      return htmlElement$macro$4$1
-    })
-  })(this, htmlElement$macro$4));
-  return new $c_Lcom_thoughtworks_binding_Binding$Map().init___Lcom_thoughtworks_binding_Binding__F1(fa$17, f$9)
-});
-$c_LMain$.prototype.bindingTable__Lcom_thoughtworks_binding_Binding$BindingSeq__Lcom_thoughtworks_binding_Binding = (function(contacts) {
-  var partialAppliedMonadic$macro$15 = $m_Lcom_thoughtworks_binding_Binding$();
-  var this$1 = $m_Lcom_thoughtworks_binding_dom$Runtime$TagsAndTags2$();
-  var htmlElement$macro$8 = this$1.table__Lscalatags_JsDom$TypedTag().render__Lorg_scalajs_dom_raw_Element();
-  var partialAppliedMonadic$macro$1 = $m_Lcom_thoughtworks_binding_Binding$();
-  var array = [$m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createTextNode("\n            ")];
-  var fa = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array)));
-  var a = fa.value$1;
-  var element$macro$16 = $as_Lcom_thoughtworks_binding_Binding(a);
-  var partialAppliedMonadic$macro$7 = $m_Lcom_thoughtworks_binding_Binding$();
-  var this$12 = $m_Lcom_thoughtworks_binding_dom$Runtime$TagsAndTags2$();
-  var htmlElement$macro$9 = this$12.tbody__Lscalatags_JsDom$TypedTag().render__Lorg_scalajs_dom_raw_Element();
-  var partialAppliedMonadic$macro$2 = $m_Lcom_thoughtworks_binding_Binding$();
-  var array$1 = [$m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createTextNode("\n            ")];
-  var fa$1 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$1))));
-  var a$1 = fa$1.value$1;
-  var element$macro$17 = $as_Lcom_thoughtworks_binding_Binding(a$1);
-  var f$3 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this, partialAppliedMonadic$macro$7$2, contacts$1, htmlElement$macro$9$1) {
-    return (function(element$macro$8$2) {
-      var element$macro$8 = $as_Lcom_thoughtworks_binding_Binding(element$macro$8$2);
-      var partialAppliedMonadic$macro$5 = $m_Lcom_thoughtworks_binding_Binding$();
-      var this$26 = $m_Lcom_thoughtworks_sde_core_Preprocessor$Internal$OpsFactory$();
-      new $c_Lcom_thoughtworks_sde_core_Preprocessor$Internal$FallbackOpsFactory0$$anon$1().init___Lcom_thoughtworks_sde_core_Preprocessor$Internal$FallbackOpsFactory0(this$26);
-      var f$1 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$1) {
-        return (function(contact$2) {
-          var contact = $as_LMain$Contact(contact$2);
-          var partialAppliedMonadic$macro$3 = $m_Lcom_thoughtworks_binding_Binding$();
-          var fa$2 = $m_LMain$().bindingTr__LMain$Contact__Lcom_thoughtworks_binding_Binding(contact);
-          var f = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$2) {
-            return (function(element$macro$4$2) {
-              return element$macro$4$2
-            })
-          })($this$1));
-          if ($is_Lcom_thoughtworks_binding_Binding$Constant(fa$2)) {
-            var x2 = $as_Lcom_thoughtworks_binding_Binding$Constant(fa$2);
-            var a$2 = x2.value$1;
-            return new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(f.apply__O__O(a$2))
-          } else {
-            return new $c_Lcom_thoughtworks_binding_Binding$Map().init___Lcom_thoughtworks_binding_Binding__F1(fa$2, f)
-          }
-        })
-      })($this));
-      var bindingSeq = new $c_Lcom_thoughtworks_binding_Binding$BindingSeq$MapBinding().init___Lcom_thoughtworks_binding_Binding$BindingSeq__F1(contacts$1, f$1);
-      var fa$3 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(bindingSeq));
-      var a$3 = fa$3.value$1;
-      var element$macro$9 = $as_Lcom_thoughtworks_binding_Binding(a$3);
-      var partialAppliedMonadic$macro$6 = $m_Lcom_thoughtworks_binding_Binding$();
-      var array$2 = [$m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createTextNode("\n            ")];
-      var fa$4 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$2)));
-      var a$4 = fa$4.value$1;
-      var element$macro$10 = $as_Lcom_thoughtworks_binding_Binding(a$4);
-      var fa$5 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$3) {
-        return (function(x$2) {
-          var x = $as_Lcom_thoughtworks_binding_Binding(x$2);
-          return x
-        })
-      })($this)));
-      var a$5 = fa$5.value$1;
-      var element$macro$11 = $as_F1(a$5);
-      var array$3 = [element$macro$8, element$macro$9, element$macro$10];
-      var this$50 = new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$3);
-      var childrenBinding = new $c_Lcom_thoughtworks_binding_Binding$BindingSeq$FlatMap().init___Lcom_thoughtworks_binding_Binding$BindingSeq__F1(new $c_Lcom_thoughtworks_binding_Binding$BindingSeq$MapBinding().init___Lcom_thoughtworks_binding_Binding$BindingSeq__F1(this$50, element$macro$11), new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$4) {
-        return (function(x$2$1) {
-          var x$1 = $as_Lcom_thoughtworks_binding_Binding$BindingSeq(x$2$1);
-          return x$1
-        })
-      })(this$50)));
-      var fa$6 = new $c_Lcom_thoughtworks_binding_dom$Runtime$NodeSeqMountPoint().init___Lorg_scalajs_dom_raw_Node__Lcom_thoughtworks_binding_Binding$BindingSeq(htmlElement$macro$9$1, childrenBinding);
-      var f$2 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$5, htmlElement$macro$9$1$1) {
-        return (function(element$macro$12$2) {
-          $asUnit(element$macro$12$2);
-          return htmlElement$macro$9$1$1
-        })
-      })($this, htmlElement$macro$9$1));
-      return new $c_Lcom_thoughtworks_binding_Binding$Map().init___Lcom_thoughtworks_binding_Binding__F1(fa$6, f$2)
-    })
-  })(this, partialAppliedMonadic$macro$7, contacts, htmlElement$macro$9));
-  if ($is_Lcom_thoughtworks_binding_Binding$Constant(element$macro$17)) {
-    var x2$1 = $as_Lcom_thoughtworks_binding_Binding$Constant(element$macro$17);
-    var a$6 = x2$1.value$1;
-    var jsx$1 = $as_Lcom_thoughtworks_binding_Binding(f$3.apply__O__O(a$6))
-  } else {
-    var jsx$1 = new $c_Lcom_thoughtworks_binding_Binding$FlatMap().init___Lcom_thoughtworks_binding_Binding__F1(element$macro$17, f$3)
-  };
-  var fa$7 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(jsx$1);
-  var a$7 = fa$7.value$1;
-  var element$macro$18 = $as_Lcom_thoughtworks_binding_Binding(a$7);
-  var f$4 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$6) {
-    return (function(element$macro$13$2) {
-      var array$4 = [element$macro$13$2];
-      return new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$4)
-    })
-  })(this));
-  if ($is_Lcom_thoughtworks_binding_Binding$Constant(element$macro$18)) {
-    var x2$2 = $as_Lcom_thoughtworks_binding_Binding$Constant(element$macro$18);
-    var a$8 = x2$2.value$1;
-    var jsx$2 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(f$4.apply__O__O(a$8))
-  } else {
-    var jsx$2 = new $c_Lcom_thoughtworks_binding_Binding$Map().init___Lcom_thoughtworks_binding_Binding__F1(element$macro$18, f$4)
-  };
-  var fa$8 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(jsx$2);
-  var a$9 = fa$8.value$1;
-  var element$macro$19 = $as_Lcom_thoughtworks_binding_Binding(a$9);
-  var partialAppliedMonadic$macro$14 = $m_Lcom_thoughtworks_binding_Binding$();
-  var array$5 = [$m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createTextNode("\n        ")];
-  var fa$9 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$5)));
-  var a$10 = fa$9.value$1;
-  var element$macro$20 = $as_Lcom_thoughtworks_binding_Binding(a$10);
-  var fa$10 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$7) {
-    return (function(x$2$2) {
-      var x$3 = $as_Lcom_thoughtworks_binding_Binding(x$2$2);
-      return x$3
-    })
-  })(this)));
-  var a$11 = fa$10.value$1;
-  var element$macro$21 = $as_F1(a$11);
-  var array$6 = [element$macro$16, element$macro$19, element$macro$20];
-  var this$84 = new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$6);
-  var childrenBinding$1 = new $c_Lcom_thoughtworks_binding_Binding$BindingSeq$FlatMap().init___Lcom_thoughtworks_binding_Binding$BindingSeq__F1(new $c_Lcom_thoughtworks_binding_Binding$BindingSeq$MapBinding().init___Lcom_thoughtworks_binding_Binding$BindingSeq__F1(this$84, element$macro$21), new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$8) {
-    return (function(x$2$3) {
-      var x$4 = $as_Lcom_thoughtworks_binding_Binding$BindingSeq(x$2$3);
-      return x$4
-    })
-  })(this$84)));
-  var fa$11 = new $c_Lcom_thoughtworks_binding_dom$Runtime$NodeSeqMountPoint().init___Lorg_scalajs_dom_raw_Node__Lcom_thoughtworks_binding_Binding$BindingSeq(htmlElement$macro$8, childrenBinding$1);
-  var f$5 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$9, htmlElement$macro$8$1) {
-    return (function(element$macro$22$2) {
-      $asUnit(element$macro$22$2);
-      return htmlElement$macro$8$1
-    })
-  })(this, htmlElement$macro$8));
-  return new $c_Lcom_thoughtworks_binding_Binding$Map().init___Lcom_thoughtworks_binding_Binding__F1(fa$11, f$5)
-});
-$c_LMain$.prototype.$$js$exported$meth$main__Lorg_scalajs_dom_raw_Node__O = (function(container) {
-  this.main__Lorg_scalajs_dom_raw_Node__V(container)
-});
-$c_LMain$.prototype.main = (function(arg$1) {
-  var prep0 = arg$1;
-  return this.$$js$exported$meth$main__Lorg_scalajs_dom_raw_Node__O(prep0)
-});
-var $d_LMain$ = new $TypeData().initClass({
-  LMain$: 0
-}, false, "Main$", {
-  LMain$: 1,
-  O: 1
-});
-$c_LMain$.prototype.$classData = $d_LMain$;
-var $n_LMain$ = (void 0);
-function $m_LMain$() {
-  if ((!$n_LMain$)) {
-    $n_LMain$ = new $c_LMain$().init___()
-  };
-  return $n_LMain$
-}
-/** @constructor */
 function $c_Lcom_thoughtworks_binding_SafeBuffer$() {
   $c_O.call(this);
   this.Hole$1 = null
@@ -1959,6 +1540,994 @@ function $m_Lcom_thoughtworks_binding_SafeBuffer$() {
     $n_Lcom_thoughtworks_binding_SafeBuffer$ = new $c_Lcom_thoughtworks_binding_SafeBuffer$().init___()
   };
   return $n_Lcom_thoughtworks_binding_SafeBuffer$
+}
+/** @constructor */
+function $c_Lme_yuanqingfei_daigou_Main$() {
+  $c_O.call(this)
+}
+$c_Lme_yuanqingfei_daigou_Main$.prototype = new $h_O();
+$c_Lme_yuanqingfei_daigou_Main$.prototype.constructor = $c_Lme_yuanqingfei_daigou_Main$;
+/** @constructor */
+function $h_Lme_yuanqingfei_daigou_Main$() {
+  /*<skip>*/
+}
+$h_Lme_yuanqingfei_daigou_Main$.prototype = $c_Lme_yuanqingfei_daigou_Main$.prototype;
+$c_Lme_yuanqingfei_daigou_Main$.prototype.init___ = (function() {
+  return this
+});
+$c_Lme_yuanqingfei_daigou_Main$.prototype.main__Lorg_scalajs_dom_raw_Node__V = (function(container) {
+  var array = [new $c_Lme_yuanqingfei_daigou_Main$Order().init___T__T__T__Z__D__D__D__D__D("2019/03/01", "testClient", "testGoods", true, 120.0, 100.0, 10.0, 10.0, 0.1)];
+  var data = new $c_Lcom_thoughtworks_binding_Binding$Vars().init___sjs_js_Array(array);
+  var child = this.bindingTable__Lcom_thoughtworks_binding_Binding$BindingSeq__Lcom_thoughtworks_binding_Binding(data);
+  var this$9 = new $c_Lcom_thoughtworks_binding_dom$Runtime$NodeMountPoint().init___Lorg_scalajs_dom_raw_Node__Lcom_thoughtworks_binding_Binding(container, child);
+  if ((this$9.com$thoughtworks$binding$Binding$MountPoint$$referenceCount$1 === 0)) {
+    this$9.mount__V()
+  };
+  this$9.com$thoughtworks$binding$Binding$MountPoint$$referenceCount$1 = ((1 + this$9.com$thoughtworks$binding$Binding$MountPoint$$referenceCount$1) | 0)
+});
+$c_Lme_yuanqingfei_daigou_Main$.prototype.bindingTable__Lcom_thoughtworks_binding_Binding$BindingSeq__Lcom_thoughtworks_binding_Binding = (function(orders) {
+  var partialAppliedMonadic$macro$18 = $m_Lcom_thoughtworks_binding_Binding$();
+  var this$1 = $m_Lcom_thoughtworks_binding_dom$Runtime$TagsAndTags2$();
+  var htmlElement$macro$21 = this$1.table__Lscalatags_JsDom$TypedTag().render__Lorg_scalajs_dom_raw_Element();
+  var partialAppliedMonadic$macro$1 = $m_Lcom_thoughtworks_binding_Binding$();
+  var array = [$m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createTextNode("\n            ")];
+  var fa = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array)));
+  var a = fa.value$1;
+  var element$macro$19 = $as_Lcom_thoughtworks_binding_Binding(a);
+  var partialAppliedMonadic$macro$2 = $m_Lcom_thoughtworks_binding_Binding$();
+  var fa$1 = $m_Lme_yuanqingfei_daigou_Main$().tableHeader__Lcom_thoughtworks_binding_Binding();
+  var f = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this) {
+    return (function(element$macro$3$2) {
+      var array$1 = [element$macro$3$2];
+      return new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$1)
+    })
+  })(this));
+  if ($is_Lcom_thoughtworks_binding_Binding$Constant(fa$1)) {
+    var x2 = $as_Lcom_thoughtworks_binding_Binding$Constant(fa$1);
+    var a$1 = x2.value$1;
+    var jsx$1 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(f.apply__O__O(a$1))
+  } else {
+    var jsx$1 = new $c_Lcom_thoughtworks_binding_Binding$Map().init___Lcom_thoughtworks_binding_Binding__F1(fa$1, f)
+  };
+  var fa$2 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(jsx$1);
+  var a$2 = fa$2.value$1;
+  var element$macro$20 = $as_Lcom_thoughtworks_binding_Binding(a$2);
+  var partialAppliedMonadic$macro$4 = $m_Lcom_thoughtworks_binding_Binding$();
+  var array$2 = [$m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createTextNode("\n            ")];
+  var fa$3 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$2)));
+  var a$3 = fa$3.value$1;
+  var element$macro$21 = $as_Lcom_thoughtworks_binding_Binding(a$3);
+  var partialAppliedMonadic$macro$10 = $m_Lcom_thoughtworks_binding_Binding$();
+  var this$32 = $m_Lcom_thoughtworks_binding_dom$Runtime$TagsAndTags2$();
+  var htmlElement$macro$22 = this$32.tbody__Lscalatags_JsDom$TypedTag().render__Lorg_scalajs_dom_raw_Element();
+  var partialAppliedMonadic$macro$5 = $m_Lcom_thoughtworks_binding_Binding$();
+  var array$3 = [$m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createTextNode("\n            ")];
+  var fa$4 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$3))));
+  var a$4 = fa$4.value$1;
+  var element$macro$22 = $as_Lcom_thoughtworks_binding_Binding(a$4);
+  var f$4 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$1, partialAppliedMonadic$macro$10$2, orders$1, htmlElement$macro$22$1) {
+    return (function(element$macro$11$2) {
+      var element$macro$11 = $as_Lcom_thoughtworks_binding_Binding(element$macro$11$2);
+      var partialAppliedMonadic$macro$8 = $m_Lcom_thoughtworks_binding_Binding$();
+      var this$46 = $m_Lcom_thoughtworks_sde_core_Preprocessor$Internal$OpsFactory$();
+      new $c_Lcom_thoughtworks_sde_core_Preprocessor$Internal$FallbackOpsFactory0$$anon$1().init___Lcom_thoughtworks_sde_core_Preprocessor$Internal$FallbackOpsFactory0(this$46);
+      var f$2 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$2) {
+        return (function(order$2) {
+          var order = $as_Lme_yuanqingfei_daigou_Main$Order(order$2);
+          var partialAppliedMonadic$macro$6 = $m_Lcom_thoughtworks_binding_Binding$();
+          var fa$5 = $m_Lme_yuanqingfei_daigou_Main$().bindingTr__Lme_yuanqingfei_daigou_Main$Order__Lcom_thoughtworks_binding_Binding(order);
+          var f$1 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$3) {
+            return (function(element$macro$7$2) {
+              return element$macro$7$2
+            })
+          })($this$2));
+          if ($is_Lcom_thoughtworks_binding_Binding$Constant(fa$5)) {
+            var x2$1 = $as_Lcom_thoughtworks_binding_Binding$Constant(fa$5);
+            var a$5 = x2$1.value$1;
+            return new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(f$1.apply__O__O(a$5))
+          } else {
+            return new $c_Lcom_thoughtworks_binding_Binding$Map().init___Lcom_thoughtworks_binding_Binding__F1(fa$5, f$1)
+          }
+        })
+      })($this$1));
+      var bindingSeq = new $c_Lcom_thoughtworks_binding_Binding$BindingSeq$MapBinding().init___Lcom_thoughtworks_binding_Binding$BindingSeq__F1(orders$1, f$2);
+      var fa$6 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(bindingSeq));
+      var a$6 = fa$6.value$1;
+      var element$macro$12 = $as_Lcom_thoughtworks_binding_Binding(a$6);
+      var partialAppliedMonadic$macro$9 = $m_Lcom_thoughtworks_binding_Binding$();
+      var array$4 = [$m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createTextNode("\n            ")];
+      var fa$7 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$4)));
+      var a$7 = fa$7.value$1;
+      var element$macro$13 = $as_Lcom_thoughtworks_binding_Binding(a$7);
+      var fa$8 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$4) {
+        return (function(x$2) {
+          var x = $as_Lcom_thoughtworks_binding_Binding(x$2);
+          return x
+        })
+      })($this$1)));
+      var a$8 = fa$8.value$1;
+      var element$macro$14 = $as_F1(a$8);
+      var array$5 = [element$macro$11, element$macro$12, element$macro$13];
+      var this$70 = new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$5);
+      var childrenBinding = new $c_Lcom_thoughtworks_binding_Binding$BindingSeq$FlatMap().init___Lcom_thoughtworks_binding_Binding$BindingSeq__F1(new $c_Lcom_thoughtworks_binding_Binding$BindingSeq$MapBinding().init___Lcom_thoughtworks_binding_Binding$BindingSeq__F1(this$70, element$macro$14), new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$5) {
+        return (function(x$2$1) {
+          var x$1 = $as_Lcom_thoughtworks_binding_Binding$BindingSeq(x$2$1);
+          return x$1
+        })
+      })(this$70)));
+      var fa$9 = new $c_Lcom_thoughtworks_binding_dom$Runtime$NodeSeqMountPoint().init___Lorg_scalajs_dom_raw_Node__Lcom_thoughtworks_binding_Binding$BindingSeq(htmlElement$macro$22$1, childrenBinding);
+      var f$3 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$6, htmlElement$macro$22$1$1) {
+        return (function(element$macro$15$2) {
+          $asUnit(element$macro$15$2);
+          return htmlElement$macro$22$1$1
+        })
+      })($this$1, htmlElement$macro$22$1));
+      return new $c_Lcom_thoughtworks_binding_Binding$Map().init___Lcom_thoughtworks_binding_Binding__F1(fa$9, f$3)
+    })
+  })(this, partialAppliedMonadic$macro$10, orders, htmlElement$macro$22));
+  if ($is_Lcom_thoughtworks_binding_Binding$Constant(element$macro$22)) {
+    var x2$2 = $as_Lcom_thoughtworks_binding_Binding$Constant(element$macro$22);
+    var a$9 = x2$2.value$1;
+    var jsx$2 = $as_Lcom_thoughtworks_binding_Binding(f$4.apply__O__O(a$9))
+  } else {
+    var jsx$2 = new $c_Lcom_thoughtworks_binding_Binding$FlatMap().init___Lcom_thoughtworks_binding_Binding__F1(element$macro$22, f$4)
+  };
+  var fa$10 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(jsx$2);
+  var a$10 = fa$10.value$1;
+  var element$macro$23 = $as_Lcom_thoughtworks_binding_Binding(a$10);
+  var f$5 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$7) {
+    return (function(element$macro$16$2) {
+      var array$6 = [element$macro$16$2];
+      return new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$6)
+    })
+  })(this));
+  if ($is_Lcom_thoughtworks_binding_Binding$Constant(element$macro$23)) {
+    var x2$3 = $as_Lcom_thoughtworks_binding_Binding$Constant(element$macro$23);
+    var a$11 = x2$3.value$1;
+    var jsx$3 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(f$5.apply__O__O(a$11))
+  } else {
+    var jsx$3 = new $c_Lcom_thoughtworks_binding_Binding$Map().init___Lcom_thoughtworks_binding_Binding__F1(element$macro$23, f$5)
+  };
+  var fa$11 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(jsx$3);
+  var a$12 = fa$11.value$1;
+  var element$macro$24 = $as_Lcom_thoughtworks_binding_Binding(a$12);
+  var partialAppliedMonadic$macro$17 = $m_Lcom_thoughtworks_binding_Binding$();
+  var array$7 = [$m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createTextNode("\n        ")];
+  var fa$12 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$7)));
+  var a$13 = fa$12.value$1;
+  var element$macro$25 = $as_Lcom_thoughtworks_binding_Binding(a$13);
+  var fa$13 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$8) {
+    return (function(x$2$2) {
+      var x$3 = $as_Lcom_thoughtworks_binding_Binding(x$2$2);
+      return x$3
+    })
+  })(this)));
+  var a$14 = fa$13.value$1;
+  var element$macro$26 = $as_F1(a$14);
+  var array$8 = [element$macro$19, element$macro$20, element$macro$21, element$macro$24, element$macro$25];
+  var this$104 = new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$8);
+  var childrenBinding$1 = new $c_Lcom_thoughtworks_binding_Binding$BindingSeq$FlatMap().init___Lcom_thoughtworks_binding_Binding$BindingSeq__F1(new $c_Lcom_thoughtworks_binding_Binding$BindingSeq$MapBinding().init___Lcom_thoughtworks_binding_Binding$BindingSeq__F1(this$104, element$macro$26), new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$9) {
+    return (function(x$2$3) {
+      var x$4 = $as_Lcom_thoughtworks_binding_Binding$BindingSeq(x$2$3);
+      return x$4
+    })
+  })(this$104)));
+  var fa$14 = new $c_Lcom_thoughtworks_binding_dom$Runtime$NodeSeqMountPoint().init___Lorg_scalajs_dom_raw_Node__Lcom_thoughtworks_binding_Binding$BindingSeq(htmlElement$macro$21, childrenBinding$1);
+  var f$6 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$10, htmlElement$macro$21$1) {
+    return (function(element$macro$27$2) {
+      $asUnit(element$macro$27$2);
+      return htmlElement$macro$21$1
+    })
+  })(this, htmlElement$macro$21));
+  return new $c_Lcom_thoughtworks_binding_Binding$Map().init___Lcom_thoughtworks_binding_Binding__F1(fa$14, f$6)
+});
+$c_Lme_yuanqingfei_daigou_Main$.prototype.$$js$exported$meth$main__Lorg_scalajs_dom_raw_Node__O = (function(container) {
+  this.main__Lorg_scalajs_dom_raw_Node__V(container)
+});
+$c_Lme_yuanqingfei_daigou_Main$.prototype.bindingTr__Lme_yuanqingfei_daigou_Main$Order__Lcom_thoughtworks_binding_Binding = (function(order) {
+  var partialAppliedMonadic$macro$46 = $m_Lcom_thoughtworks_binding_Binding$();
+  var this$1 = $m_Lcom_thoughtworks_binding_dom$Runtime$TagsAndTags2$();
+  var htmlElement$macro$11 = this$1.tr__Lscalatags_JsDom$TypedTag().render__Lorg_scalajs_dom_raw_Element();
+  var partialAppliedMonadic$macro$1 = $m_Lcom_thoughtworks_binding_Binding$();
+  var array = [$m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createTextNode("\n            ")];
+  var fa = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array)));
+  var a = fa.value$1;
+  var element$macro$47 = $as_Lcom_thoughtworks_binding_Binding(a);
+  var partialAppliedMonadic$macro$5 = $m_Lcom_thoughtworks_binding_Binding$();
+  var this$12 = $m_Lcom_thoughtworks_binding_dom$Runtime$TagsAndTags2$();
+  var htmlElement$macro$12 = this$12.td__Lscalatags_JsDom$TypedTag().render__Lorg_scalajs_dom_raw_Element();
+  var partialAppliedMonadic$macro$2 = $m_Lcom_thoughtworks_binding_Binding$();
+  var array$1 = [$m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createTextNode("\n                ")];
+  var fa$1 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$1))));
+  var a$1 = fa$1.value$1;
+  var element$macro$48 = $as_Lcom_thoughtworks_binding_Binding(a$1);
+  var f$1 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this, partialAppliedMonadic$macro$5$2, order$5, htmlElement$macro$12$1) {
+    return (function(element$macro$6$2) {
+      var element$macro$6 = $as_Lcom_thoughtworks_binding_Binding(element$macro$6$2);
+      var partialAppliedMonadic$macro$3 = $m_Lcom_thoughtworks_binding_Binding$();
+      var text = order$5.date$1;
+      var array$2 = [$m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createTextNode(text)];
+      var fa$2 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$2)));
+      var a$2 = fa$2.value$1;
+      var element$macro$7 = $as_Lcom_thoughtworks_binding_Binding(a$2);
+      var partialAppliedMonadic$macro$4 = $m_Lcom_thoughtworks_binding_Binding$();
+      var array$3 = [$m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createTextNode("\n            ")];
+      var fa$3 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$3)));
+      var a$3 = fa$3.value$1;
+      var element$macro$8 = $as_Lcom_thoughtworks_binding_Binding(a$3);
+      var fa$4 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$1) {
+        return (function(x$2) {
+          var x = $as_Lcom_thoughtworks_binding_Binding(x$2);
+          return x
+        })
+      })($this)));
+      var a$4 = fa$4.value$1;
+      var element$macro$9 = $as_F1(a$4);
+      var array$4 = [element$macro$6, element$macro$7, element$macro$8];
+      var this$53 = new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$4);
+      var childrenBinding = new $c_Lcom_thoughtworks_binding_Binding$BindingSeq$FlatMap().init___Lcom_thoughtworks_binding_Binding$BindingSeq__F1(new $c_Lcom_thoughtworks_binding_Binding$BindingSeq$MapBinding().init___Lcom_thoughtworks_binding_Binding$BindingSeq__F1(this$53, element$macro$9), new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$2) {
+        return (function(x$2$1) {
+          var x$1 = $as_Lcom_thoughtworks_binding_Binding$BindingSeq(x$2$1);
+          return x$1
+        })
+      })(this$53)));
+      var fa$5 = new $c_Lcom_thoughtworks_binding_dom$Runtime$NodeSeqMountPoint().init___Lorg_scalajs_dom_raw_Node__Lcom_thoughtworks_binding_Binding$BindingSeq(htmlElement$macro$12$1, childrenBinding);
+      var f = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$3, htmlElement$macro$12$1$1) {
+        return (function(element$macro$10$2) {
+          $asUnit(element$macro$10$2);
+          return htmlElement$macro$12$1$1
+        })
+      })($this, htmlElement$macro$12$1));
+      return new $c_Lcom_thoughtworks_binding_Binding$Map().init___Lcom_thoughtworks_binding_Binding__F1(fa$5, f)
+    })
+  })(this, partialAppliedMonadic$macro$5, order, htmlElement$macro$12));
+  if ($is_Lcom_thoughtworks_binding_Binding$Constant(element$macro$48)) {
+    var x2 = $as_Lcom_thoughtworks_binding_Binding$Constant(element$macro$48);
+    var a$5 = x2.value$1;
+    var jsx$1 = $as_Lcom_thoughtworks_binding_Binding(f$1.apply__O__O(a$5))
+  } else {
+    var jsx$1 = new $c_Lcom_thoughtworks_binding_Binding$FlatMap().init___Lcom_thoughtworks_binding_Binding__F1(element$macro$48, f$1)
+  };
+  var fa$6 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(jsx$1);
+  var a$6 = fa$6.value$1;
+  var element$macro$49 = $as_Lcom_thoughtworks_binding_Binding(a$6);
+  var f$2 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$4) {
+    return (function(element$macro$11$2) {
+      var array$5 = [element$macro$11$2];
+      return new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$5)
+    })
+  })(this));
+  if ($is_Lcom_thoughtworks_binding_Binding$Constant(element$macro$49)) {
+    var x2$1 = $as_Lcom_thoughtworks_binding_Binding$Constant(element$macro$49);
+    var a$7 = x2$1.value$1;
+    var jsx$2 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(f$2.apply__O__O(a$7))
+  } else {
+    var jsx$2 = new $c_Lcom_thoughtworks_binding_Binding$Map().init___Lcom_thoughtworks_binding_Binding__F1(element$macro$49, f$2)
+  };
+  var fa$7 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(jsx$2);
+  var a$8 = fa$7.value$1;
+  var element$macro$50 = $as_Lcom_thoughtworks_binding_Binding(a$8);
+  var partialAppliedMonadic$macro$12 = $m_Lcom_thoughtworks_binding_Binding$();
+  var array$6 = [$m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createTextNode("\n            ")];
+  var fa$8 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$6)));
+  var a$9 = fa$8.value$1;
+  var element$macro$51 = $as_Lcom_thoughtworks_binding_Binding(a$9);
+  var partialAppliedMonadic$macro$13 = $m_Lcom_thoughtworks_binding_Binding$();
+  var this$78 = $m_Lcom_thoughtworks_binding_dom$Runtime$TagsAndTags2$();
+  var htmlElement$macro$13 = this$78.td__Lscalatags_JsDom$TypedTag().render__Lorg_scalajs_dom_raw_Element();
+  var text$1 = order.client$1;
+  var array$7 = [$m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createTextNode(text$1)];
+  var childrenBinding$1 = new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$7);
+  var fa$9 = new $c_Lcom_thoughtworks_binding_dom$Runtime$NodeSeqMountPoint().init___Lorg_scalajs_dom_raw_Node__Lcom_thoughtworks_binding_Binding$BindingSeq(htmlElement$macro$13, childrenBinding$1);
+  var f$3 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$5, htmlElement$macro$13$1) {
+    return (function(element$macro$14$2) {
+      $asUnit(element$macro$14$2);
+      return htmlElement$macro$13$1
+    })
+  })(this, htmlElement$macro$13));
+  var fa$10 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Map().init___Lcom_thoughtworks_binding_Binding__F1(fa$9, f$3));
+  var a$10 = fa$10.value$1;
+  var element$macro$52 = $as_Lcom_thoughtworks_binding_Binding(a$10);
+  var f$4 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$6) {
+    return (function(element$macro$15$2) {
+      var array$8 = [element$macro$15$2];
+      return new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$8)
+    })
+  })(this));
+  if ($is_Lcom_thoughtworks_binding_Binding$Constant(element$macro$52)) {
+    var x2$2 = $as_Lcom_thoughtworks_binding_Binding$Constant(element$macro$52);
+    var a$11 = x2$2.value$1;
+    var jsx$3 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(f$4.apply__O__O(a$11))
+  } else {
+    var jsx$3 = new $c_Lcom_thoughtworks_binding_Binding$Map().init___Lcom_thoughtworks_binding_Binding__F1(element$macro$52, f$4)
+  };
+  var fa$11 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(jsx$3);
+  var a$12 = fa$11.value$1;
+  var element$macro$53 = $as_Lcom_thoughtworks_binding_Binding(a$12);
+  var partialAppliedMonadic$macro$16 = $m_Lcom_thoughtworks_binding_Binding$();
+  var array$9 = [$m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createTextNode("\n            ")];
+  var fa$12 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$9)));
+  var a$13 = fa$12.value$1;
+  var element$macro$54 = $as_Lcom_thoughtworks_binding_Binding(a$13);
+  var partialAppliedMonadic$macro$17 = $m_Lcom_thoughtworks_binding_Binding$();
+  var this$109 = $m_Lcom_thoughtworks_binding_dom$Runtime$TagsAndTags2$();
+  var htmlElement$macro$14 = this$109.td__Lscalatags_JsDom$TypedTag().render__Lorg_scalajs_dom_raw_Element();
+  var text$2 = order.goods$1;
+  var array$10 = [$m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createTextNode(text$2)];
+  var childrenBinding$2 = new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$10);
+  var fa$13 = new $c_Lcom_thoughtworks_binding_dom$Runtime$NodeSeqMountPoint().init___Lorg_scalajs_dom_raw_Node__Lcom_thoughtworks_binding_Binding$BindingSeq(htmlElement$macro$14, childrenBinding$2);
+  var f$5 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$7, htmlElement$macro$14$1) {
+    return (function(element$macro$18$2) {
+      $asUnit(element$macro$18$2);
+      return htmlElement$macro$14$1
+    })
+  })(this, htmlElement$macro$14));
+  var fa$14 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Map().init___Lcom_thoughtworks_binding_Binding__F1(fa$13, f$5));
+  var a$14 = fa$14.value$1;
+  var element$macro$55 = $as_Lcom_thoughtworks_binding_Binding(a$14);
+  var f$6 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$8) {
+    return (function(element$macro$19$2) {
+      var array$11 = [element$macro$19$2];
+      return new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$11)
+    })
+  })(this));
+  if ($is_Lcom_thoughtworks_binding_Binding$Constant(element$macro$55)) {
+    var x2$3 = $as_Lcom_thoughtworks_binding_Binding$Constant(element$macro$55);
+    var a$15 = x2$3.value$1;
+    var jsx$4 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(f$6.apply__O__O(a$15))
+  } else {
+    var jsx$4 = new $c_Lcom_thoughtworks_binding_Binding$Map().init___Lcom_thoughtworks_binding_Binding__F1(element$macro$55, f$6)
+  };
+  var fa$15 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(jsx$4);
+  var a$16 = fa$15.value$1;
+  var element$macro$56 = $as_Lcom_thoughtworks_binding_Binding(a$16);
+  var partialAppliedMonadic$macro$20 = $m_Lcom_thoughtworks_binding_Binding$();
+  var array$12 = [$m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createTextNode("\n            ")];
+  var fa$16 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$12)));
+  var a$17 = fa$16.value$1;
+  var element$macro$57 = $as_Lcom_thoughtworks_binding_Binding(a$17);
+  var partialAppliedMonadic$macro$21 = $m_Lcom_thoughtworks_binding_Binding$();
+  var this$140 = $m_Lcom_thoughtworks_binding_dom$Runtime$TagsAndTags2$();
+  var htmlElement$macro$15 = this$140.td__Lscalatags_JsDom$TypedTag().render__Lorg_scalajs_dom_raw_Element();
+  var value = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(order.completed$1);
+  var a$18 = value.value$1;
+  var x$4 = $uZ(a$18);
+  var fa$18 = (x$4 ? new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O("completed") : new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O("processing"));
+  var f$8 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$4$1, partialAppliedMonadic$macro$21$2, htmlElement$macro$15$1) {
+    return (function(element$macro$22$2) {
+      var element$macro$22 = $as_T(element$macro$22$2);
+      var array$13 = [$m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createTextNode(element$macro$22)];
+      var childrenBinding$3 = new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$13);
+      var fa$17 = new $c_Lcom_thoughtworks_binding_dom$Runtime$NodeSeqMountPoint().init___Lorg_scalajs_dom_raw_Node__Lcom_thoughtworks_binding_Binding$BindingSeq(htmlElement$macro$15$1, childrenBinding$3);
+      var f$7 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$9, htmlElement$macro$15$1$1) {
+        return (function(element$macro$23$2) {
+          $asUnit(element$macro$23$2);
+          return htmlElement$macro$15$1$1
+        })
+      })(this$4$1, htmlElement$macro$15$1));
+      return new $c_Lcom_thoughtworks_binding_Binding$Map().init___Lcom_thoughtworks_binding_Binding__F1(fa$17, f$7)
+    })
+  })(this, partialAppliedMonadic$macro$21, htmlElement$macro$15));
+  if ((fa$18 !== null)) {
+    var a$19 = fa$18.value$1;
+    var jsx$5 = $as_Lcom_thoughtworks_binding_Binding(f$8.apply__O__O(a$19))
+  } else {
+    var jsx$5 = new $c_Lcom_thoughtworks_binding_Binding$FlatMap().init___Lcom_thoughtworks_binding_Binding__F1(fa$18, f$8)
+  };
+  var fa$19 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(jsx$5);
+  var a$20 = fa$19.value$1;
+  var element$macro$58 = $as_Lcom_thoughtworks_binding_Binding(a$20);
+  var f$9 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$10) {
+    return (function(element$macro$24$2) {
+      var array$14 = [element$macro$24$2];
+      return new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$14)
+    })
+  })(this));
+  if ($is_Lcom_thoughtworks_binding_Binding$Constant(element$macro$58)) {
+    var x2$4 = $as_Lcom_thoughtworks_binding_Binding$Constant(element$macro$58);
+    var a$21 = x2$4.value$1;
+    var jsx$6 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(f$9.apply__O__O(a$21))
+  } else {
+    var jsx$6 = new $c_Lcom_thoughtworks_binding_Binding$Map().init___Lcom_thoughtworks_binding_Binding__F1(element$macro$58, f$9)
+  };
+  var fa$20 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(jsx$6);
+  var a$22 = fa$20.value$1;
+  var element$macro$59 = $as_Lcom_thoughtworks_binding_Binding(a$22);
+  var partialAppliedMonadic$macro$25 = $m_Lcom_thoughtworks_binding_Binding$();
+  var array$15 = [$m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createTextNode("\n            ")];
+  var fa$21 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$15)));
+  var a$23 = fa$21.value$1;
+  var element$macro$60 = $as_Lcom_thoughtworks_binding_Binding(a$23);
+  var partialAppliedMonadic$macro$26 = $m_Lcom_thoughtworks_binding_Binding$();
+  var this$176 = $m_Lcom_thoughtworks_binding_dom$Runtime$TagsAndTags2$();
+  var htmlElement$macro$16 = this$176.td__Lscalatags_JsDom$TypedTag().render__Lorg_scalajs_dom_raw_Element();
+  var this$178 = order.sellPrice$1;
+  var text$3 = ("" + this$178);
+  var array$16 = [$m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createTextNode(text$3)];
+  var childrenBinding$4 = new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$16);
+  var fa$22 = new $c_Lcom_thoughtworks_binding_dom$Runtime$NodeSeqMountPoint().init___Lorg_scalajs_dom_raw_Node__Lcom_thoughtworks_binding_Binding$BindingSeq(htmlElement$macro$16, childrenBinding$4);
+  var f$10 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$11, htmlElement$macro$16$1) {
+    return (function(element$macro$27$2) {
+      $asUnit(element$macro$27$2);
+      return htmlElement$macro$16$1
+    })
+  })(this, htmlElement$macro$16));
+  var fa$23 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Map().init___Lcom_thoughtworks_binding_Binding__F1(fa$22, f$10));
+  var a$24 = fa$23.value$1;
+  var element$macro$61 = $as_Lcom_thoughtworks_binding_Binding(a$24);
+  var f$11 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$12) {
+    return (function(element$macro$28$2) {
+      var array$17 = [element$macro$28$2];
+      return new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$17)
+    })
+  })(this));
+  if ($is_Lcom_thoughtworks_binding_Binding$Constant(element$macro$61)) {
+    var x2$5 = $as_Lcom_thoughtworks_binding_Binding$Constant(element$macro$61);
+    var a$25 = x2$5.value$1;
+    var jsx$7 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(f$11.apply__O__O(a$25))
+  } else {
+    var jsx$7 = new $c_Lcom_thoughtworks_binding_Binding$Map().init___Lcom_thoughtworks_binding_Binding__F1(element$macro$61, f$11)
+  };
+  var fa$24 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(jsx$7);
+  var a$26 = fa$24.value$1;
+  var element$macro$62 = $as_Lcom_thoughtworks_binding_Binding(a$26);
+  var partialAppliedMonadic$macro$29 = $m_Lcom_thoughtworks_binding_Binding$();
+  var array$18 = [$m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createTextNode("\n            ")];
+  var fa$25 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$18)));
+  var a$27 = fa$25.value$1;
+  var element$macro$63 = $as_Lcom_thoughtworks_binding_Binding(a$27);
+  var partialAppliedMonadic$macro$30 = $m_Lcom_thoughtworks_binding_Binding$();
+  var this$209 = $m_Lcom_thoughtworks_binding_dom$Runtime$TagsAndTags2$();
+  var htmlElement$macro$17 = this$209.td__Lscalatags_JsDom$TypedTag().render__Lorg_scalajs_dom_raw_Element();
+  var this$211 = order.goodsPrice$1;
+  var text$4 = ("" + this$211);
+  var array$19 = [$m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createTextNode(text$4)];
+  var childrenBinding$5 = new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$19);
+  var fa$26 = new $c_Lcom_thoughtworks_binding_dom$Runtime$NodeSeqMountPoint().init___Lorg_scalajs_dom_raw_Node__Lcom_thoughtworks_binding_Binding$BindingSeq(htmlElement$macro$17, childrenBinding$5);
+  var f$12 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$13, htmlElement$macro$17$1) {
+    return (function(element$macro$31$2) {
+      $asUnit(element$macro$31$2);
+      return htmlElement$macro$17$1
+    })
+  })(this, htmlElement$macro$17));
+  var fa$27 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Map().init___Lcom_thoughtworks_binding_Binding__F1(fa$26, f$12));
+  var a$28 = fa$27.value$1;
+  var element$macro$64 = $as_Lcom_thoughtworks_binding_Binding(a$28);
+  var f$13 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$14) {
+    return (function(element$macro$32$2) {
+      var array$20 = [element$macro$32$2];
+      return new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$20)
+    })
+  })(this));
+  if ($is_Lcom_thoughtworks_binding_Binding$Constant(element$macro$64)) {
+    var x2$6 = $as_Lcom_thoughtworks_binding_Binding$Constant(element$macro$64);
+    var a$29 = x2$6.value$1;
+    var jsx$8 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(f$13.apply__O__O(a$29))
+  } else {
+    var jsx$8 = new $c_Lcom_thoughtworks_binding_Binding$Map().init___Lcom_thoughtworks_binding_Binding__F1(element$macro$64, f$13)
+  };
+  var fa$28 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(jsx$8);
+  var a$30 = fa$28.value$1;
+  var element$macro$65 = $as_Lcom_thoughtworks_binding_Binding(a$30);
+  var partialAppliedMonadic$macro$33 = $m_Lcom_thoughtworks_binding_Binding$();
+  var array$21 = [$m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createTextNode("\n            ")];
+  var fa$29 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$21)));
+  var a$31 = fa$29.value$1;
+  var element$macro$66 = $as_Lcom_thoughtworks_binding_Binding(a$31);
+  var partialAppliedMonadic$macro$34 = $m_Lcom_thoughtworks_binding_Binding$();
+  var this$242 = $m_Lcom_thoughtworks_binding_dom$Runtime$TagsAndTags2$();
+  var htmlElement$macro$18 = this$242.td__Lscalatags_JsDom$TypedTag().render__Lorg_scalajs_dom_raw_Element();
+  var this$244 = order.transferPrice$1;
+  var text$5 = ("" + this$244);
+  var array$22 = [$m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createTextNode(text$5)];
+  var childrenBinding$6 = new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$22);
+  var fa$30 = new $c_Lcom_thoughtworks_binding_dom$Runtime$NodeSeqMountPoint().init___Lorg_scalajs_dom_raw_Node__Lcom_thoughtworks_binding_Binding$BindingSeq(htmlElement$macro$18, childrenBinding$6);
+  var f$14 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$15, htmlElement$macro$18$1) {
+    return (function(element$macro$35$2) {
+      $asUnit(element$macro$35$2);
+      return htmlElement$macro$18$1
+    })
+  })(this, htmlElement$macro$18));
+  var fa$31 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Map().init___Lcom_thoughtworks_binding_Binding__F1(fa$30, f$14));
+  var a$32 = fa$31.value$1;
+  var element$macro$67 = $as_Lcom_thoughtworks_binding_Binding(a$32);
+  var f$15 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$16) {
+    return (function(element$macro$36$2) {
+      var array$23 = [element$macro$36$2];
+      return new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$23)
+    })
+  })(this));
+  if ($is_Lcom_thoughtworks_binding_Binding$Constant(element$macro$67)) {
+    var x2$7 = $as_Lcom_thoughtworks_binding_Binding$Constant(element$macro$67);
+    var a$33 = x2$7.value$1;
+    var jsx$9 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(f$15.apply__O__O(a$33))
+  } else {
+    var jsx$9 = new $c_Lcom_thoughtworks_binding_Binding$Map().init___Lcom_thoughtworks_binding_Binding__F1(element$macro$67, f$15)
+  };
+  var fa$32 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(jsx$9);
+  var a$34 = fa$32.value$1;
+  var element$macro$68 = $as_Lcom_thoughtworks_binding_Binding(a$34);
+  var partialAppliedMonadic$macro$37 = $m_Lcom_thoughtworks_binding_Binding$();
+  var array$24 = [$m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createTextNode("\n            ")];
+  var fa$33 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$24)));
+  var a$35 = fa$33.value$1;
+  var element$macro$69 = $as_Lcom_thoughtworks_binding_Binding(a$35);
+  var partialAppliedMonadic$macro$38 = $m_Lcom_thoughtworks_binding_Binding$();
+  var this$275 = $m_Lcom_thoughtworks_binding_dom$Runtime$TagsAndTags2$();
+  var htmlElement$macro$19 = this$275.td__Lscalatags_JsDom$TypedTag().render__Lorg_scalajs_dom_raw_Element();
+  var this$277 = order.profit$1;
+  var text$6 = ("" + this$277);
+  var array$25 = [$m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createTextNode(text$6)];
+  var childrenBinding$7 = new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$25);
+  var fa$34 = new $c_Lcom_thoughtworks_binding_dom$Runtime$NodeSeqMountPoint().init___Lorg_scalajs_dom_raw_Node__Lcom_thoughtworks_binding_Binding$BindingSeq(htmlElement$macro$19, childrenBinding$7);
+  var f$16 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$17, htmlElement$macro$19$1) {
+    return (function(element$macro$39$2) {
+      $asUnit(element$macro$39$2);
+      return htmlElement$macro$19$1
+    })
+  })(this, htmlElement$macro$19));
+  var fa$35 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Map().init___Lcom_thoughtworks_binding_Binding__F1(fa$34, f$16));
+  var a$36 = fa$35.value$1;
+  var element$macro$70 = $as_Lcom_thoughtworks_binding_Binding(a$36);
+  var f$17 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$18) {
+    return (function(element$macro$40$2) {
+      var array$26 = [element$macro$40$2];
+      return new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$26)
+    })
+  })(this));
+  if ($is_Lcom_thoughtworks_binding_Binding$Constant(element$macro$70)) {
+    var x2$8 = $as_Lcom_thoughtworks_binding_Binding$Constant(element$macro$70);
+    var a$37 = x2$8.value$1;
+    var jsx$10 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(f$17.apply__O__O(a$37))
+  } else {
+    var jsx$10 = new $c_Lcom_thoughtworks_binding_Binding$Map().init___Lcom_thoughtworks_binding_Binding__F1(element$macro$70, f$17)
+  };
+  var fa$36 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(jsx$10);
+  var a$38 = fa$36.value$1;
+  var element$macro$71 = $as_Lcom_thoughtworks_binding_Binding(a$38);
+  var partialAppliedMonadic$macro$41 = $m_Lcom_thoughtworks_binding_Binding$();
+  var array$27 = [$m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createTextNode("\n            ")];
+  var fa$37 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$27)));
+  var a$39 = fa$37.value$1;
+  var element$macro$72 = $as_Lcom_thoughtworks_binding_Binding(a$39);
+  var partialAppliedMonadic$macro$42 = $m_Lcom_thoughtworks_binding_Binding$();
+  var this$308 = $m_Lcom_thoughtworks_binding_dom$Runtime$TagsAndTags2$();
+  var htmlElement$macro$20 = this$308.td__Lscalatags_JsDom$TypedTag().render__Lorg_scalajs_dom_raw_Element();
+  var this$310 = order.profitPercent$1;
+  var text$7 = ("" + this$310);
+  var array$28 = [$m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createTextNode(text$7)];
+  var childrenBinding$8 = new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$28);
+  var fa$38 = new $c_Lcom_thoughtworks_binding_dom$Runtime$NodeSeqMountPoint().init___Lorg_scalajs_dom_raw_Node__Lcom_thoughtworks_binding_Binding$BindingSeq(htmlElement$macro$20, childrenBinding$8);
+  var f$18 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$19, htmlElement$macro$20$1) {
+    return (function(element$macro$43$2) {
+      $asUnit(element$macro$43$2);
+      return htmlElement$macro$20$1
+    })
+  })(this, htmlElement$macro$20));
+  var fa$39 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Map().init___Lcom_thoughtworks_binding_Binding__F1(fa$38, f$18));
+  var a$40 = fa$39.value$1;
+  var element$macro$73 = $as_Lcom_thoughtworks_binding_Binding(a$40);
+  var f$19 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$20) {
+    return (function(element$macro$44$2) {
+      var array$29 = [element$macro$44$2];
+      return new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$29)
+    })
+  })(this));
+  if ($is_Lcom_thoughtworks_binding_Binding$Constant(element$macro$73)) {
+    var x2$9 = $as_Lcom_thoughtworks_binding_Binding$Constant(element$macro$73);
+    var a$41 = x2$9.value$1;
+    var jsx$11 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(f$19.apply__O__O(a$41))
+  } else {
+    var jsx$11 = new $c_Lcom_thoughtworks_binding_Binding$Map().init___Lcom_thoughtworks_binding_Binding__F1(element$macro$73, f$19)
+  };
+  var fa$40 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(jsx$11);
+  var a$42 = fa$40.value$1;
+  var element$macro$74 = $as_Lcom_thoughtworks_binding_Binding(a$42);
+  var partialAppliedMonadic$macro$45 = $m_Lcom_thoughtworks_binding_Binding$();
+  var array$30 = [$m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createTextNode("\n        ")];
+  var fa$41 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$30)));
+  var a$43 = fa$41.value$1;
+  var element$macro$75 = $as_Lcom_thoughtworks_binding_Binding(a$43);
+  var fa$42 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$21) {
+    return (function(x$2$2) {
+      var x$3 = $as_Lcom_thoughtworks_binding_Binding(x$2$2);
+      return x$3
+    })
+  })(this)));
+  var a$44 = fa$42.value$1;
+  var element$macro$76 = $as_F1(a$44);
+  var array$31 = [element$macro$47, element$macro$50, element$macro$51, element$macro$53, element$macro$54, element$macro$56, element$macro$57, element$macro$59, element$macro$60, element$macro$62, element$macro$63, element$macro$65, element$macro$66, element$macro$68, element$macro$69, element$macro$71, element$macro$72, element$macro$74, element$macro$75];
+  var this$350 = new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$31);
+  var childrenBinding$9 = new $c_Lcom_thoughtworks_binding_Binding$BindingSeq$FlatMap().init___Lcom_thoughtworks_binding_Binding$BindingSeq__F1(new $c_Lcom_thoughtworks_binding_Binding$BindingSeq$MapBinding().init___Lcom_thoughtworks_binding_Binding$BindingSeq__F1(this$350, element$macro$76), new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$22) {
+    return (function(x$2$3) {
+      var x$5 = $as_Lcom_thoughtworks_binding_Binding$BindingSeq(x$2$3);
+      return x$5
+    })
+  })(this$350)));
+  var fa$43 = new $c_Lcom_thoughtworks_binding_dom$Runtime$NodeSeqMountPoint().init___Lorg_scalajs_dom_raw_Node__Lcom_thoughtworks_binding_Binding$BindingSeq(htmlElement$macro$11, childrenBinding$9);
+  var f$20 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$23, htmlElement$macro$11$1) {
+    return (function(element$macro$77$2) {
+      $asUnit(element$macro$77$2);
+      return htmlElement$macro$11$1
+    })
+  })(this, htmlElement$macro$11));
+  return new $c_Lcom_thoughtworks_binding_Binding$Map().init___Lcom_thoughtworks_binding_Binding__F1(fa$43, f$20)
+});
+$c_Lme_yuanqingfei_daigou_Main$.prototype.tableHeader__Lcom_thoughtworks_binding_Binding = (function() {
+  var partialAppliedMonadic$macro$38 = $m_Lcom_thoughtworks_binding_Binding$();
+  var this$1 = $m_Lcom_thoughtworks_binding_dom$Runtime$TagsAndTags2$();
+  var htmlElement$macro$1 = this$1.tr__Lscalatags_JsDom$TypedTag().render__Lorg_scalajs_dom_raw_Element();
+  var partialAppliedMonadic$macro$1 = $m_Lcom_thoughtworks_binding_Binding$();
+  var array = [$m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createTextNode("\n            ")];
+  var fa = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array)));
+  var a = fa.value$1;
+  var element$macro$39 = $as_Lcom_thoughtworks_binding_Binding(a);
+  var partialAppliedMonadic$macro$2 = $m_Lcom_thoughtworks_binding_Binding$();
+  var this$12 = $m_Lcom_thoughtworks_binding_dom$Runtime$TagsAndTags2$();
+  var htmlElement$macro$2 = this$12.th__Lscalatags_JsDom$TypedTag().render__Lorg_scalajs_dom_raw_Element();
+  var array$1 = [$m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createTextNode("\u8ba2\u5355\u65e5\u671f")];
+  var childrenBinding = new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$1);
+  var fa$1 = new $c_Lcom_thoughtworks_binding_dom$Runtime$NodeSeqMountPoint().init___Lorg_scalajs_dom_raw_Node__Lcom_thoughtworks_binding_Binding$BindingSeq(htmlElement$macro$2, childrenBinding);
+  var f = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this, htmlElement$macro$2$1) {
+    return (function(element$macro$3$2) {
+      $asUnit(element$macro$3$2);
+      return htmlElement$macro$2$1
+    })
+  })(this, htmlElement$macro$2));
+  var fa$2 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Map().init___Lcom_thoughtworks_binding_Binding__F1(fa$1, f));
+  var a$1 = fa$2.value$1;
+  var element$macro$40 = $as_Lcom_thoughtworks_binding_Binding(a$1);
+  var f$1 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$1) {
+    return (function(element$macro$4$2) {
+      var array$2 = [element$macro$4$2];
+      return new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$2)
+    })
+  })(this));
+  if ($is_Lcom_thoughtworks_binding_Binding$Constant(element$macro$40)) {
+    var x2 = $as_Lcom_thoughtworks_binding_Binding$Constant(element$macro$40);
+    var a$2 = x2.value$1;
+    var jsx$1 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(f$1.apply__O__O(a$2))
+  } else {
+    var jsx$1 = new $c_Lcom_thoughtworks_binding_Binding$Map().init___Lcom_thoughtworks_binding_Binding__F1(element$macro$40, f$1)
+  };
+  var fa$3 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(jsx$1);
+  var a$3 = fa$3.value$1;
+  var element$macro$41 = $as_Lcom_thoughtworks_binding_Binding(a$3);
+  var partialAppliedMonadic$macro$5 = $m_Lcom_thoughtworks_binding_Binding$();
+  var array$3 = [$m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createTextNode("\n            ")];
+  var fa$4 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$3)));
+  var a$4 = fa$4.value$1;
+  var element$macro$42 = $as_Lcom_thoughtworks_binding_Binding(a$4);
+  var partialAppliedMonadic$macro$6 = $m_Lcom_thoughtworks_binding_Binding$();
+  var this$43 = $m_Lcom_thoughtworks_binding_dom$Runtime$TagsAndTags2$();
+  var htmlElement$macro$3 = this$43.th__Lscalatags_JsDom$TypedTag().render__Lorg_scalajs_dom_raw_Element();
+  var array$4 = [$m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createTextNode("\u5ba2\u6237\u540d\u79f0")];
+  var childrenBinding$1 = new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$4);
+  var fa$5 = new $c_Lcom_thoughtworks_binding_dom$Runtime$NodeSeqMountPoint().init___Lorg_scalajs_dom_raw_Node__Lcom_thoughtworks_binding_Binding$BindingSeq(htmlElement$macro$3, childrenBinding$1);
+  var f$2 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$2, htmlElement$macro$3$1) {
+    return (function(element$macro$7$2) {
+      $asUnit(element$macro$7$2);
+      return htmlElement$macro$3$1
+    })
+  })(this, htmlElement$macro$3));
+  var fa$6 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Map().init___Lcom_thoughtworks_binding_Binding__F1(fa$5, f$2));
+  var a$5 = fa$6.value$1;
+  var element$macro$43 = $as_Lcom_thoughtworks_binding_Binding(a$5);
+  var f$3 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$3) {
+    return (function(element$macro$8$2) {
+      var array$5 = [element$macro$8$2];
+      return new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$5)
+    })
+  })(this));
+  if ($is_Lcom_thoughtworks_binding_Binding$Constant(element$macro$43)) {
+    var x2$1 = $as_Lcom_thoughtworks_binding_Binding$Constant(element$macro$43);
+    var a$6 = x2$1.value$1;
+    var jsx$2 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(f$3.apply__O__O(a$6))
+  } else {
+    var jsx$2 = new $c_Lcom_thoughtworks_binding_Binding$Map().init___Lcom_thoughtworks_binding_Binding__F1(element$macro$43, f$3)
+  };
+  var fa$7 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(jsx$2);
+  var a$7 = fa$7.value$1;
+  var element$macro$44 = $as_Lcom_thoughtworks_binding_Binding(a$7);
+  var partialAppliedMonadic$macro$9 = $m_Lcom_thoughtworks_binding_Binding$();
+  var array$6 = [$m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createTextNode("\n            ")];
+  var fa$8 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$6)));
+  var a$8 = fa$8.value$1;
+  var element$macro$45 = $as_Lcom_thoughtworks_binding_Binding(a$8);
+  var partialAppliedMonadic$macro$10 = $m_Lcom_thoughtworks_binding_Binding$();
+  var this$74 = $m_Lcom_thoughtworks_binding_dom$Runtime$TagsAndTags2$();
+  var htmlElement$macro$4 = this$74.th__Lscalatags_JsDom$TypedTag().render__Lorg_scalajs_dom_raw_Element();
+  var array$7 = [$m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createTextNode("\u5546\u54c1\u540d\u79f0")];
+  var childrenBinding$2 = new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$7);
+  var fa$9 = new $c_Lcom_thoughtworks_binding_dom$Runtime$NodeSeqMountPoint().init___Lorg_scalajs_dom_raw_Node__Lcom_thoughtworks_binding_Binding$BindingSeq(htmlElement$macro$4, childrenBinding$2);
+  var f$4 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$4, htmlElement$macro$4$1) {
+    return (function(element$macro$11$2) {
+      $asUnit(element$macro$11$2);
+      return htmlElement$macro$4$1
+    })
+  })(this, htmlElement$macro$4));
+  var fa$10 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Map().init___Lcom_thoughtworks_binding_Binding__F1(fa$9, f$4));
+  var a$9 = fa$10.value$1;
+  var element$macro$46 = $as_Lcom_thoughtworks_binding_Binding(a$9);
+  var f$5 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$5) {
+    return (function(element$macro$12$2) {
+      var array$8 = [element$macro$12$2];
+      return new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$8)
+    })
+  })(this));
+  if ($is_Lcom_thoughtworks_binding_Binding$Constant(element$macro$46)) {
+    var x2$2 = $as_Lcom_thoughtworks_binding_Binding$Constant(element$macro$46);
+    var a$10 = x2$2.value$1;
+    var jsx$3 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(f$5.apply__O__O(a$10))
+  } else {
+    var jsx$3 = new $c_Lcom_thoughtworks_binding_Binding$Map().init___Lcom_thoughtworks_binding_Binding__F1(element$macro$46, f$5)
+  };
+  var fa$11 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(jsx$3);
+  var a$11 = fa$11.value$1;
+  var element$macro$47 = $as_Lcom_thoughtworks_binding_Binding(a$11);
+  var partialAppliedMonadic$macro$13 = $m_Lcom_thoughtworks_binding_Binding$();
+  var array$9 = [$m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createTextNode("\n            ")];
+  var fa$12 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$9)));
+  var a$12 = fa$12.value$1;
+  var element$macro$48 = $as_Lcom_thoughtworks_binding_Binding(a$12);
+  var partialAppliedMonadic$macro$14 = $m_Lcom_thoughtworks_binding_Binding$();
+  var this$105 = $m_Lcom_thoughtworks_binding_dom$Runtime$TagsAndTags2$();
+  var htmlElement$macro$5 = this$105.th__Lscalatags_JsDom$TypedTag().render__Lorg_scalajs_dom_raw_Element();
+  var array$10 = [$m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createTextNode("\u72b6\u6001")];
+  var childrenBinding$3 = new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$10);
+  var fa$13 = new $c_Lcom_thoughtworks_binding_dom$Runtime$NodeSeqMountPoint().init___Lorg_scalajs_dom_raw_Node__Lcom_thoughtworks_binding_Binding$BindingSeq(htmlElement$macro$5, childrenBinding$3);
+  var f$6 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$6, htmlElement$macro$5$1) {
+    return (function(element$macro$15$2) {
+      $asUnit(element$macro$15$2);
+      return htmlElement$macro$5$1
+    })
+  })(this, htmlElement$macro$5));
+  var fa$14 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Map().init___Lcom_thoughtworks_binding_Binding__F1(fa$13, f$6));
+  var a$13 = fa$14.value$1;
+  var element$macro$49 = $as_Lcom_thoughtworks_binding_Binding(a$13);
+  var f$7 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$7) {
+    return (function(element$macro$16$2) {
+      var array$11 = [element$macro$16$2];
+      return new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$11)
+    })
+  })(this));
+  if ($is_Lcom_thoughtworks_binding_Binding$Constant(element$macro$49)) {
+    var x2$3 = $as_Lcom_thoughtworks_binding_Binding$Constant(element$macro$49);
+    var a$14 = x2$3.value$1;
+    var jsx$4 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(f$7.apply__O__O(a$14))
+  } else {
+    var jsx$4 = new $c_Lcom_thoughtworks_binding_Binding$Map().init___Lcom_thoughtworks_binding_Binding__F1(element$macro$49, f$7)
+  };
+  var fa$15 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(jsx$4);
+  var a$15 = fa$15.value$1;
+  var element$macro$50 = $as_Lcom_thoughtworks_binding_Binding(a$15);
+  var partialAppliedMonadic$macro$17 = $m_Lcom_thoughtworks_binding_Binding$();
+  var array$12 = [$m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createTextNode("\n            ")];
+  var fa$16 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$12)));
+  var a$16 = fa$16.value$1;
+  var element$macro$51 = $as_Lcom_thoughtworks_binding_Binding(a$16);
+  var partialAppliedMonadic$macro$18 = $m_Lcom_thoughtworks_binding_Binding$();
+  var this$136 = $m_Lcom_thoughtworks_binding_dom$Runtime$TagsAndTags2$();
+  var htmlElement$macro$6 = this$136.th__Lscalatags_JsDom$TypedTag().render__Lorg_scalajs_dom_raw_Element();
+  var array$13 = [$m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createTextNode("\u5546\u54c1\u552e\u4ef7")];
+  var childrenBinding$4 = new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$13);
+  var fa$17 = new $c_Lcom_thoughtworks_binding_dom$Runtime$NodeSeqMountPoint().init___Lorg_scalajs_dom_raw_Node__Lcom_thoughtworks_binding_Binding$BindingSeq(htmlElement$macro$6, childrenBinding$4);
+  var f$8 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$8, htmlElement$macro$6$1) {
+    return (function(element$macro$19$2) {
+      $asUnit(element$macro$19$2);
+      return htmlElement$macro$6$1
+    })
+  })(this, htmlElement$macro$6));
+  var fa$18 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Map().init___Lcom_thoughtworks_binding_Binding__F1(fa$17, f$8));
+  var a$17 = fa$18.value$1;
+  var element$macro$52 = $as_Lcom_thoughtworks_binding_Binding(a$17);
+  var f$9 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$9) {
+    return (function(element$macro$20$2) {
+      var array$14 = [element$macro$20$2];
+      return new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$14)
+    })
+  })(this));
+  if ($is_Lcom_thoughtworks_binding_Binding$Constant(element$macro$52)) {
+    var x2$4 = $as_Lcom_thoughtworks_binding_Binding$Constant(element$macro$52);
+    var a$18 = x2$4.value$1;
+    var jsx$5 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(f$9.apply__O__O(a$18))
+  } else {
+    var jsx$5 = new $c_Lcom_thoughtworks_binding_Binding$Map().init___Lcom_thoughtworks_binding_Binding__F1(element$macro$52, f$9)
+  };
+  var fa$19 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(jsx$5);
+  var a$19 = fa$19.value$1;
+  var element$macro$53 = $as_Lcom_thoughtworks_binding_Binding(a$19);
+  var partialAppliedMonadic$macro$21 = $m_Lcom_thoughtworks_binding_Binding$();
+  var array$15 = [$m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createTextNode("\n            ")];
+  var fa$20 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$15)));
+  var a$20 = fa$20.value$1;
+  var element$macro$54 = $as_Lcom_thoughtworks_binding_Binding(a$20);
+  var partialAppliedMonadic$macro$22 = $m_Lcom_thoughtworks_binding_Binding$();
+  var this$167 = $m_Lcom_thoughtworks_binding_dom$Runtime$TagsAndTags2$();
+  var htmlElement$macro$7 = this$167.th__Lscalatags_JsDom$TypedTag().render__Lorg_scalajs_dom_raw_Element();
+  var array$16 = [$m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createTextNode("\u5546\u54c1\u6210\u672c")];
+  var childrenBinding$5 = new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$16);
+  var fa$21 = new $c_Lcom_thoughtworks_binding_dom$Runtime$NodeSeqMountPoint().init___Lorg_scalajs_dom_raw_Node__Lcom_thoughtworks_binding_Binding$BindingSeq(htmlElement$macro$7, childrenBinding$5);
+  var f$10 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$10, htmlElement$macro$7$1) {
+    return (function(element$macro$23$2) {
+      $asUnit(element$macro$23$2);
+      return htmlElement$macro$7$1
+    })
+  })(this, htmlElement$macro$7));
+  var fa$22 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Map().init___Lcom_thoughtworks_binding_Binding__F1(fa$21, f$10));
+  var a$21 = fa$22.value$1;
+  var element$macro$55 = $as_Lcom_thoughtworks_binding_Binding(a$21);
+  var f$11 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$11) {
+    return (function(element$macro$24$2) {
+      var array$17 = [element$macro$24$2];
+      return new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$17)
+    })
+  })(this));
+  if ($is_Lcom_thoughtworks_binding_Binding$Constant(element$macro$55)) {
+    var x2$5 = $as_Lcom_thoughtworks_binding_Binding$Constant(element$macro$55);
+    var a$22 = x2$5.value$1;
+    var jsx$6 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(f$11.apply__O__O(a$22))
+  } else {
+    var jsx$6 = new $c_Lcom_thoughtworks_binding_Binding$Map().init___Lcom_thoughtworks_binding_Binding__F1(element$macro$55, f$11)
+  };
+  var fa$23 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(jsx$6);
+  var a$23 = fa$23.value$1;
+  var element$macro$56 = $as_Lcom_thoughtworks_binding_Binding(a$23);
+  var partialAppliedMonadic$macro$25 = $m_Lcom_thoughtworks_binding_Binding$();
+  var array$18 = [$m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createTextNode("\n            ")];
+  var fa$24 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$18)));
+  var a$24 = fa$24.value$1;
+  var element$macro$57 = $as_Lcom_thoughtworks_binding_Binding(a$24);
+  var partialAppliedMonadic$macro$26 = $m_Lcom_thoughtworks_binding_Binding$();
+  var this$198 = $m_Lcom_thoughtworks_binding_dom$Runtime$TagsAndTags2$();
+  var htmlElement$macro$8 = this$198.th__Lscalatags_JsDom$TypedTag().render__Lorg_scalajs_dom_raw_Element();
+  var array$19 = [$m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createTextNode("\u5feb\u9012\u8d39")];
+  var childrenBinding$6 = new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$19);
+  var fa$25 = new $c_Lcom_thoughtworks_binding_dom$Runtime$NodeSeqMountPoint().init___Lorg_scalajs_dom_raw_Node__Lcom_thoughtworks_binding_Binding$BindingSeq(htmlElement$macro$8, childrenBinding$6);
+  var f$12 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$12, htmlElement$macro$8$1) {
+    return (function(element$macro$27$2) {
+      $asUnit(element$macro$27$2);
+      return htmlElement$macro$8$1
+    })
+  })(this, htmlElement$macro$8));
+  var fa$26 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Map().init___Lcom_thoughtworks_binding_Binding__F1(fa$25, f$12));
+  var a$25 = fa$26.value$1;
+  var element$macro$58 = $as_Lcom_thoughtworks_binding_Binding(a$25);
+  var f$13 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$13) {
+    return (function(element$macro$28$2) {
+      var array$20 = [element$macro$28$2];
+      return new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$20)
+    })
+  })(this));
+  if ($is_Lcom_thoughtworks_binding_Binding$Constant(element$macro$58)) {
+    var x2$6 = $as_Lcom_thoughtworks_binding_Binding$Constant(element$macro$58);
+    var a$26 = x2$6.value$1;
+    var jsx$7 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(f$13.apply__O__O(a$26))
+  } else {
+    var jsx$7 = new $c_Lcom_thoughtworks_binding_Binding$Map().init___Lcom_thoughtworks_binding_Binding__F1(element$macro$58, f$13)
+  };
+  var fa$27 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(jsx$7);
+  var a$27 = fa$27.value$1;
+  var element$macro$59 = $as_Lcom_thoughtworks_binding_Binding(a$27);
+  var partialAppliedMonadic$macro$29 = $m_Lcom_thoughtworks_binding_Binding$();
+  var array$21 = [$m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createTextNode("\n            ")];
+  var fa$28 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$21)));
+  var a$28 = fa$28.value$1;
+  var element$macro$60 = $as_Lcom_thoughtworks_binding_Binding(a$28);
+  var partialAppliedMonadic$macro$30 = $m_Lcom_thoughtworks_binding_Binding$();
+  var this$229 = $m_Lcom_thoughtworks_binding_dom$Runtime$TagsAndTags2$();
+  var htmlElement$macro$9 = this$229.th__Lscalatags_JsDom$TypedTag().render__Lorg_scalajs_dom_raw_Element();
+  var array$22 = [$m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createTextNode("\u5229\u6da6")];
+  var childrenBinding$7 = new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$22);
+  var fa$29 = new $c_Lcom_thoughtworks_binding_dom$Runtime$NodeSeqMountPoint().init___Lorg_scalajs_dom_raw_Node__Lcom_thoughtworks_binding_Binding$BindingSeq(htmlElement$macro$9, childrenBinding$7);
+  var f$14 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$14, htmlElement$macro$9$1) {
+    return (function(element$macro$31$2) {
+      $asUnit(element$macro$31$2);
+      return htmlElement$macro$9$1
+    })
+  })(this, htmlElement$macro$9));
+  var fa$30 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Map().init___Lcom_thoughtworks_binding_Binding__F1(fa$29, f$14));
+  var a$29 = fa$30.value$1;
+  var element$macro$61 = $as_Lcom_thoughtworks_binding_Binding(a$29);
+  var f$15 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$15) {
+    return (function(element$macro$32$2) {
+      var array$23 = [element$macro$32$2];
+      return new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$23)
+    })
+  })(this));
+  if ($is_Lcom_thoughtworks_binding_Binding$Constant(element$macro$61)) {
+    var x2$7 = $as_Lcom_thoughtworks_binding_Binding$Constant(element$macro$61);
+    var a$30 = x2$7.value$1;
+    var jsx$8 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(f$15.apply__O__O(a$30))
+  } else {
+    var jsx$8 = new $c_Lcom_thoughtworks_binding_Binding$Map().init___Lcom_thoughtworks_binding_Binding__F1(element$macro$61, f$15)
+  };
+  var fa$31 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(jsx$8);
+  var a$31 = fa$31.value$1;
+  var element$macro$62 = $as_Lcom_thoughtworks_binding_Binding(a$31);
+  var partialAppliedMonadic$macro$33 = $m_Lcom_thoughtworks_binding_Binding$();
+  var array$24 = [$m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createTextNode("\n            ")];
+  var fa$32 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$24)));
+  var a$32 = fa$32.value$1;
+  var element$macro$63 = $as_Lcom_thoughtworks_binding_Binding(a$32);
+  var partialAppliedMonadic$macro$34 = $m_Lcom_thoughtworks_binding_Binding$();
+  var this$260 = $m_Lcom_thoughtworks_binding_dom$Runtime$TagsAndTags2$();
+  var htmlElement$macro$10 = this$260.th__Lscalatags_JsDom$TypedTag().render__Lorg_scalajs_dom_raw_Element();
+  var array$25 = [$m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createTextNode("\u5229\u6da6\u7387")];
+  var childrenBinding$8 = new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$25);
+  var fa$33 = new $c_Lcom_thoughtworks_binding_dom$Runtime$NodeSeqMountPoint().init___Lorg_scalajs_dom_raw_Node__Lcom_thoughtworks_binding_Binding$BindingSeq(htmlElement$macro$10, childrenBinding$8);
+  var f$16 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$16, htmlElement$macro$10$1) {
+    return (function(element$macro$35$2) {
+      $asUnit(element$macro$35$2);
+      return htmlElement$macro$10$1
+    })
+  })(this, htmlElement$macro$10));
+  var fa$34 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Map().init___Lcom_thoughtworks_binding_Binding__F1(fa$33, f$16));
+  var a$33 = fa$34.value$1;
+  var element$macro$64 = $as_Lcom_thoughtworks_binding_Binding(a$33);
+  var f$17 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$17) {
+    return (function(element$macro$36$2) {
+      var array$26 = [element$macro$36$2];
+      return new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$26)
+    })
+  })(this));
+  if ($is_Lcom_thoughtworks_binding_Binding$Constant(element$macro$64)) {
+    var x2$8 = $as_Lcom_thoughtworks_binding_Binding$Constant(element$macro$64);
+    var a$34 = x2$8.value$1;
+    var jsx$9 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(f$17.apply__O__O(a$34))
+  } else {
+    var jsx$9 = new $c_Lcom_thoughtworks_binding_Binding$Map().init___Lcom_thoughtworks_binding_Binding__F1(element$macro$64, f$17)
+  };
+  var fa$35 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(jsx$9);
+  var a$35 = fa$35.value$1;
+  var element$macro$65 = $as_Lcom_thoughtworks_binding_Binding(a$35);
+  var partialAppliedMonadic$macro$37 = $m_Lcom_thoughtworks_binding_Binding$();
+  var array$27 = [$m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createTextNode("\n        ")];
+  var fa$36 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$27)));
+  var a$36 = fa$36.value$1;
+  var element$macro$66 = $as_Lcom_thoughtworks_binding_Binding(a$36);
+  var fa$37 = new $c_Lcom_thoughtworks_binding_Binding$Constant().init___O(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$18) {
+    return (function(x$2) {
+      var x = $as_Lcom_thoughtworks_binding_Binding(x$2);
+      return x
+    })
+  })(this)));
+  var a$37 = fa$37.value$1;
+  var element$macro$67 = $as_F1(a$37);
+  var array$28 = [element$macro$39, element$macro$41, element$macro$42, element$macro$44, element$macro$45, element$macro$47, element$macro$48, element$macro$50, element$macro$51, element$macro$53, element$macro$54, element$macro$56, element$macro$57, element$macro$59, element$macro$60, element$macro$62, element$macro$63, element$macro$65, element$macro$66];
+  var this$300 = new $c_Lcom_thoughtworks_binding_Binding$Constants().init___sjs_js_Array(array$28);
+  var childrenBinding$9 = new $c_Lcom_thoughtworks_binding_Binding$BindingSeq$FlatMap().init___Lcom_thoughtworks_binding_Binding$BindingSeq__F1(new $c_Lcom_thoughtworks_binding_Binding$BindingSeq$MapBinding().init___Lcom_thoughtworks_binding_Binding$BindingSeq__F1(this$300, element$macro$67), new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$19) {
+    return (function(x$2$1) {
+      var x$1 = $as_Lcom_thoughtworks_binding_Binding$BindingSeq(x$2$1);
+      return x$1
+    })
+  })(this$300)));
+  var fa$38 = new $c_Lcom_thoughtworks_binding_dom$Runtime$NodeSeqMountPoint().init___Lorg_scalajs_dom_raw_Node__Lcom_thoughtworks_binding_Binding$BindingSeq(htmlElement$macro$1, childrenBinding$9);
+  var f$18 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$20, htmlElement$macro$1$1) {
+    return (function(element$macro$68$2) {
+      $asUnit(element$macro$68$2);
+      return htmlElement$macro$1$1
+    })
+  })(this, htmlElement$macro$1));
+  return new $c_Lcom_thoughtworks_binding_Binding$Map().init___Lcom_thoughtworks_binding_Binding__F1(fa$38, f$18)
+});
+$c_Lme_yuanqingfei_daigou_Main$.prototype.main = (function(arg$1) {
+  var prep0 = arg$1;
+  return this.$$js$exported$meth$main__Lorg_scalajs_dom_raw_Node__O(prep0)
+});
+var $d_Lme_yuanqingfei_daigou_Main$ = new $TypeData().initClass({
+  Lme_yuanqingfei_daigou_Main$: 0
+}, false, "me.yuanqingfei.daigou.Main$", {
+  Lme_yuanqingfei_daigou_Main$: 1,
+  O: 1
+});
+$c_Lme_yuanqingfei_daigou_Main$.prototype.$classData = $d_Lme_yuanqingfei_daigou_Main$;
+var $n_Lme_yuanqingfei_daigou_Main$ = (void 0);
+function $m_Lme_yuanqingfei_daigou_Main$() {
+  if ((!$n_Lme_yuanqingfei_daigou_Main$)) {
+    $n_Lme_yuanqingfei_daigou_Main$ = new $c_Lme_yuanqingfei_daigou_Main$().init___()
+  };
+  return $n_Lme_yuanqingfei_daigou_Main$
 }
 /** @constructor */
 function $c_Lorg_scalajs_dom_package$() {
@@ -3891,35 +4460,6 @@ function $h_Lcom_thoughtworks_binding_Binding$BindingSeq$MapBinding$$anon$7() {
   /*<skip>*/
 }
 $h_Lcom_thoughtworks_binding_Binding$BindingSeq$MapBinding$$anon$7.prototype = $c_Lcom_thoughtworks_binding_Binding$BindingSeq$MapBinding$$anon$7.prototype;
-$c_Lcom_thoughtworks_binding_Binding$BindingSeq$MapBinding$$anon$7.prototype.changed__Lcom_thoughtworks_binding_Binding$ChangedEvent__V = (function(event) {
-  var this$1 = this.$$outer$1;
-  var a = $as_Lcom_thoughtworks_binding_Binding(event.source$1);
-  var array = this$1.cacheData$1;
-  var len = $uI(array.length);
-  var i = 0;
-  while (true) {
-    if ((i < len)) {
-      var index = i;
-      var arg1 = array[index];
-      var jsx$1 = (!$m_sr_BoxesRunTime$().equals__O__O__Z(a, arg1))
-    } else {
-      var jsx$1 = false
-    };
-    if (jsx$1) {
-      i = ((1 + i) | 0)
-    } else {
-      break
-    }
-  };
-  var n = i;
-  var index$1 = ((n >= $uI(array.length)) ? (-1) : n);
-  this.$$outer$1.publisher$1.foreach__F1__V(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this, index$2, event$1) {
-    return (function(listener$2) {
-      var listener = $as_Lcom_thoughtworks_binding_Binding$PatchedListener(listener$2);
-      listener.patched__Lcom_thoughtworks_binding_Binding$PatchedEvent__V(new $c_Lcom_thoughtworks_binding_Binding$PatchedEvent().init___Lcom_thoughtworks_binding_Binding$BindingSeq__I__sc_GenSeq__I($this.$$outer$1, index$2, new $c_Lcom_thoughtworks_binding_Binding$SingleSeq().init___O(event$1.newValue$2), 1))
-    })
-  })(this, index$1, event)))
-});
 $c_Lcom_thoughtworks_binding_Binding$BindingSeq$MapBinding$$anon$7.prototype.init___Lcom_thoughtworks_binding_Binding$BindingSeq$MapBinding = (function($$outer) {
   if (($$outer === null)) {
     throw $m_sjsr_package$().unwrapJavaScriptException__jl_Throwable__O(null)
@@ -3967,40 +4507,6 @@ var $d_Lcom_thoughtworks_binding_Binding$BindingSeq$MultiMountPoint$$anon$3 = ne
   Lcom_thoughtworks_binding_Binding$PatchedListener: 1
 });
 $c_Lcom_thoughtworks_binding_Binding$BindingSeq$MultiMountPoint$$anon$3.prototype.$classData = $d_Lcom_thoughtworks_binding_Binding$BindingSeq$MultiMountPoint$$anon$3;
-/** @constructor */
-function $c_Lcom_thoughtworks_binding_Binding$ChangedEvent() {
-  $c_ju_EventObject.call(this);
-  this.source$2 = null;
-  this.newValue$2 = null
-}
-$c_Lcom_thoughtworks_binding_Binding$ChangedEvent.prototype = new $h_ju_EventObject();
-$c_Lcom_thoughtworks_binding_Binding$ChangedEvent.prototype.constructor = $c_Lcom_thoughtworks_binding_Binding$ChangedEvent;
-/** @constructor */
-function $h_Lcom_thoughtworks_binding_Binding$ChangedEvent() {
-  /*<skip>*/
-}
-$h_Lcom_thoughtworks_binding_Binding$ChangedEvent.prototype = $c_Lcom_thoughtworks_binding_Binding$ChangedEvent.prototype;
-$c_Lcom_thoughtworks_binding_Binding$ChangedEvent.prototype.init___O__O = (function(source, newValue) {
-  this.source$2 = source;
-  this.newValue$2 = newValue;
-  $c_ju_EventObject.prototype.init___O.call(this, source);
-  return this
-});
-$c_Lcom_thoughtworks_binding_Binding$ChangedEvent.prototype.toString__T = (function() {
-  return (((("ChangedEvent[source=" + this.source$2) + " newValue=") + this.newValue$2) + "]")
-});
-$c_Lcom_thoughtworks_binding_Binding$ChangedEvent.prototype.init___Lcom_thoughtworks_binding_Binding__O = (function(source, newValue) {
-  $c_Lcom_thoughtworks_binding_Binding$ChangedEvent.prototype.init___O__O.call(this, source, newValue);
-  return this
-});
-var $d_Lcom_thoughtworks_binding_Binding$ChangedEvent = new $TypeData().initClass({
-  Lcom_thoughtworks_binding_Binding$ChangedEvent: 0
-}, false, "com.thoughtworks.binding.Binding$ChangedEvent", {
-  Lcom_thoughtworks_binding_Binding$ChangedEvent: 1,
-  ju_EventObject: 1,
-  O: 1
-});
-$c_Lcom_thoughtworks_binding_Binding$ChangedEvent.prototype.$classData = $d_Lcom_thoughtworks_binding_Binding$ChangedEvent;
 /** @constructor */
 function $c_Lcom_thoughtworks_binding_Binding$Constants() {
   $c_O.call(this);
@@ -4054,22 +4560,6 @@ $c_Lcom_thoughtworks_binding_Binding$FlatMap$$anon$1.prototype.init___Lcom_thoug
     this.$$outer$1 = $$outer
   };
   return this
-});
-$c_Lcom_thoughtworks_binding_Binding$FlatMap$$anon$1.prototype.changed__Lcom_thoughtworks_binding_Binding$ChangedEvent__V = (function(upstreamEvent) {
-  var oldCache = this.$$outer$1.com$thoughtworks$binding$Binding$FlatMap$$cache$1;
-  oldCache.removeChangedListener__Lcom_thoughtworks_binding_Binding$ChangedListener__V(this.$$outer$1);
-  var newCache = $as_Lcom_thoughtworks_binding_Binding(this.$$outer$1.com$thoughtworks$binding$Binding$FlatMap$$f$f.apply__O__O(upstreamEvent.newValue$2));
-  this.$$outer$1.com$thoughtworks$binding$Binding$FlatMap$$cache$1 = newCache;
-  newCache.addChangedListener__Lcom_thoughtworks_binding_Binding$ChangedListener__V(this.$$outer$1);
-  if ((!$m_sr_BoxesRunTime$().equals__O__O__Z(oldCache.value__O(), newCache.value__O()))) {
-    var event = new $c_Lcom_thoughtworks_binding_Binding$ChangedEvent().init___Lcom_thoughtworks_binding_Binding__O(this.$$outer$1, newCache.value__O());
-    this.$$outer$1.com$thoughtworks$binding$Binding$FlatMap$$publisher$1.foreach__F1__V(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this, event$1) {
-      return (function(listener$2) {
-        var listener = $as_Lcom_thoughtworks_binding_Binding$ChangedListener(listener$2);
-        listener.changed__Lcom_thoughtworks_binding_Binding$ChangedEvent__V(event$1)
-      })
-    })(this, event)))
-  }
 });
 var $d_Lcom_thoughtworks_binding_Binding$FlatMap$$anon$1 = new $TypeData().initClass({
   Lcom_thoughtworks_binding_Binding$FlatMap$$anon$1: 0
@@ -4137,11 +4627,6 @@ $c_Lcom_thoughtworks_binding_Binding$SingleMountPoint$$anon$10.prototype.init___
   };
   return this
 });
-$c_Lcom_thoughtworks_binding_Binding$SingleMountPoint$$anon$10.prototype.changed__Lcom_thoughtworks_binding_Binding$ChangedEvent__V = (function(event) {
-  var this$1 = this.$$outer$1;
-  var value = event.newValue$2;
-  this$1.set__Lorg_scalajs_dom_raw_Node__V(value)
-});
 var $d_Lcom_thoughtworks_binding_Binding$SingleMountPoint$$anon$10 = new $TypeData().initClass({
   Lcom_thoughtworks_binding_Binding$SingleMountPoint$$anon$10: 0
 }, false, "com.thoughtworks.binding.Binding$SingleMountPoint$$anon$10", {
@@ -4150,135 +4635,6 @@ var $d_Lcom_thoughtworks_binding_Binding$SingleMountPoint$$anon$10 = new $TypeDa
   Lcom_thoughtworks_binding_Binding$ChangedListener: 1
 });
 $c_Lcom_thoughtworks_binding_Binding$SingleMountPoint$$anon$10.prototype.$classData = $d_Lcom_thoughtworks_binding_Binding$SingleMountPoint$$anon$10;
-/** @constructor */
-function $c_Lcom_thoughtworks_binding_Binding$Var() {
-  $c_O.call(this);
-  this.com$thoughtworks$binding$Binding$Var$$cache$1 = null;
-  this.com$thoughtworks$binding$Binding$Var$$publisher$1 = null
-}
-$c_Lcom_thoughtworks_binding_Binding$Var.prototype = new $h_O();
-$c_Lcom_thoughtworks_binding_Binding$Var.prototype.constructor = $c_Lcom_thoughtworks_binding_Binding$Var;
-/** @constructor */
-function $h_Lcom_thoughtworks_binding_Binding$Var() {
-  /*<skip>*/
-}
-$h_Lcom_thoughtworks_binding_Binding$Var.prototype = $c_Lcom_thoughtworks_binding_Binding$Var.prototype;
-$c_Lcom_thoughtworks_binding_Binding$Var.prototype.value__O = (function() {
-  return this.com$thoughtworks$binding$Binding$Var$$cache$1
-});
-$c_Lcom_thoughtworks_binding_Binding$Var.prototype.value$und$eq__O__V = (function(newValue) {
-  if ((!$m_sr_BoxesRunTime$().equals__O__O__Z(this.com$thoughtworks$binding$Binding$Var$$cache$1, newValue))) {
-    this.com$thoughtworks$binding$Binding$Var$$cache$1 = newValue;
-    var event = new $c_Lcom_thoughtworks_binding_Binding$ChangedEvent().init___Lcom_thoughtworks_binding_Binding__O(this, newValue);
-    this.com$thoughtworks$binding$Binding$Var$$publisher$1.foreach__F1__V(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this, event$1) {
-      return (function(listener$2) {
-        var listener = $as_Lcom_thoughtworks_binding_Binding$ChangedListener(listener$2);
-        listener.changed__Lcom_thoughtworks_binding_Binding$ChangedEvent__V(event$1)
-      })
-    })(this, event)))
-  }
-});
-$c_Lcom_thoughtworks_binding_Binding$Var.prototype.removeChangedListener__Lcom_thoughtworks_binding_Binding$ChangedListener__V = (function(listener) {
-  var this$1 = this.com$thoughtworks$binding$Binding$Var$$publisher$1;
-  var x1 = this$1.com$thoughtworks$binding$SafeBuffer$$state$1;
-  var x$2 = $m_Lcom_thoughtworks_binding_SafeBuffer$Idle$();
-  if ((x$2 === x1)) {
-    var array = this$1.com$thoughtworks$binding$SafeBuffer$$data$1;
-    var len = $uI(array.length);
-    var i = 0;
-    while (true) {
-      if ((i < len)) {
-        var index = i;
-        var arg1 = array[index];
-        var jsx$1 = (!$m_sr_BoxesRunTime$().equals__O__O__Z(listener, arg1))
-      } else {
-        var jsx$1 = false
-      };
-      if (jsx$1) {
-        i = ((1 + i) | 0)
-      } else {
-        break
-      }
-    };
-    var n = i;
-    var i$1 = ((n >= $uI(array.length)) ? (-1) : n);
-    if ((i$1 !== (-1))) {
-      if (((i$1 < 0) || (i$1 >= $uI(array.length)))) {
-        throw new $c_jl_IndexOutOfBoundsException().init___()
-      };
-      array.splice(i$1, 1)[0]
-    }
-  } else {
-    var x$4 = $m_Lcom_thoughtworks_binding_SafeBuffer$CleanForeach$();
-    if ((x$4 === x1)) {
-      var jsx$3 = this$1.com$thoughtworks$binding$SafeBuffer$$data$1;
-      var array$1 = this$1.com$thoughtworks$binding$SafeBuffer$$data$1;
-      var len$1 = $uI(array$1.length);
-      var i$2 = 0;
-      while (true) {
-        if ((i$2 < len$1)) {
-          var index$1 = i$2;
-          var arg1$1 = array$1[index$1];
-          var jsx$2 = (!$m_sr_BoxesRunTime$().equals__O__O__Z(listener, arg1$1))
-        } else {
-          var jsx$2 = false
-        };
-        if (jsx$2) {
-          i$2 = ((1 + i$2) | 0)
-        } else {
-          break
-        }
-      };
-      var n$1 = i$2;
-      jsx$3[((n$1 >= $uI(array$1.length)) ? (-1) : n$1)] = $m_Lcom_thoughtworks_binding_SafeBuffer$().Hole$1;
-      this$1.com$thoughtworks$binding$SafeBuffer$$state$1 = $m_Lcom_thoughtworks_binding_SafeBuffer$DirtyForeach$()
-    } else {
-      var x$6 = $m_Lcom_thoughtworks_binding_SafeBuffer$DirtyForeach$();
-      if ((x$6 === x1)) {
-        var jsx$5 = this$1.com$thoughtworks$binding$SafeBuffer$$data$1;
-        var array$2 = this$1.com$thoughtworks$binding$SafeBuffer$$data$1;
-        var len$2 = $uI(array$2.length);
-        var i$3 = 0;
-        while (true) {
-          if ((i$3 < len$2)) {
-            var index$2 = i$3;
-            var arg1$2 = array$2[index$2];
-            var jsx$4 = (!$m_sr_BoxesRunTime$().equals__O__O__Z(listener, arg1$2))
-          } else {
-            var jsx$4 = false
-          };
-          if (jsx$4) {
-            i$3 = ((1 + i$3) | 0)
-          } else {
-            break
-          }
-        };
-        var n$2 = i$3;
-        jsx$5[((n$2 >= $uI(array$2.length)) ? (-1) : n$2)] = $m_Lcom_thoughtworks_binding_SafeBuffer$().Hole$1
-      } else {
-        throw new $c_s_MatchError().init___O(x1)
-      }
-    }
-  }
-});
-$c_Lcom_thoughtworks_binding_Binding$Var.prototype.init___O = (function(cache) {
-  this.com$thoughtworks$binding$Binding$Var$$cache$1 = cache;
-  this.com$thoughtworks$binding$Binding$Var$$publisher$1 = new $c_Lcom_thoughtworks_binding_SafeBuffer().init___();
-  return this
-});
-$c_Lcom_thoughtworks_binding_Binding$Var.prototype.addChangedListener__Lcom_thoughtworks_binding_Binding$ChangedListener__V = (function(listener) {
-  var this$1 = this.com$thoughtworks$binding$Binding$Var$$publisher$1;
-  var array = this$1.com$thoughtworks$binding$SafeBuffer$$data$1;
-  array.push(listener)
-});
-var $d_Lcom_thoughtworks_binding_Binding$Var = new $TypeData().initClass({
-  Lcom_thoughtworks_binding_Binding$Var: 0
-}, false, "com.thoughtworks.binding.Binding$Var", {
-  Lcom_thoughtworks_binding_Binding$Var: 1,
-  O: 1,
-  Lcom_thoughtworks_binding_Binding: 1
-});
-$c_Lcom_thoughtworks_binding_Binding$Var.prototype.$classData = $d_Lcom_thoughtworks_binding_Binding$Var;
 /** @constructor */
 function $c_Lscalatags_generic_Namespace$$anon$1() {
   $c_O.call(this)
@@ -5803,15 +6159,6 @@ $c_Lcom_thoughtworks_binding_Binding$FlatMap.prototype.removeChangedListener__Lc
     this.com$thoughtworks$binding$Binding$FlatMap$$cache$1.removeChangedListener__Lcom_thoughtworks_binding_Binding$ChangedListener__V(this)
   }
 });
-$c_Lcom_thoughtworks_binding_Binding$FlatMap.prototype.changed__Lcom_thoughtworks_binding_Binding$ChangedEvent__V = (function(upstreamEvent) {
-  var event = new $c_Lcom_thoughtworks_binding_Binding$ChangedEvent().init___Lcom_thoughtworks_binding_Binding__O(this, upstreamEvent.newValue$2);
-  this.com$thoughtworks$binding$Binding$FlatMap$$publisher$1.foreach__F1__V(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this, event$1) {
-    return (function(listener$2) {
-      var listener = $as_Lcom_thoughtworks_binding_Binding$ChangedListener(listener$2);
-      listener.changed__Lcom_thoughtworks_binding_Binding$ChangedEvent__V(event$1)
-    })
-  })(this, event)))
-});
 $c_Lcom_thoughtworks_binding_Binding$FlatMap.prototype.addChangedListener__Lcom_thoughtworks_binding_Binding$ChangedListener__V = (function(listener) {
   var this$1 = this.com$thoughtworks$binding$Binding$FlatMap$$publisher$1;
   var array = this$1.com$thoughtworks$binding$SafeBuffer$$data$1;
@@ -5988,20 +6335,6 @@ $c_Lcom_thoughtworks_binding_Binding$Map.prototype.removeChangedListener__Lcom_t
   };
   if ((i$4 === $uI(array$3.length))) {
     this.com$thoughtworks$binding$Binding$Map$$upstream$f.removeChangedListener__Lcom_thoughtworks_binding_Binding$ChangedListener__V(this)
-  }
-});
-$c_Lcom_thoughtworks_binding_Binding$Map.prototype.changed__Lcom_thoughtworks_binding_Binding$ChangedEvent__V = (function(upstreamEvent) {
-  var oldCache = this.com$thoughtworks$binding$Binding$Map$$cache$1;
-  var newCache = this.f$1.apply__O__O(upstreamEvent.newValue$2);
-  this.com$thoughtworks$binding$Binding$Map$$cache$1 = newCache;
-  if ((!$m_sr_BoxesRunTime$().equals__O__O__Z(oldCache, newCache))) {
-    var event = new $c_Lcom_thoughtworks_binding_Binding$ChangedEvent().init___Lcom_thoughtworks_binding_Binding__O(this, newCache);
-    this.com$thoughtworks$binding$Binding$Map$$publisher$1.foreach__F1__V(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this, event$1) {
-      return (function(listener$2) {
-        var listener = $as_Lcom_thoughtworks_binding_Binding$ChangedListener(listener$2);
-        listener.changed__Lcom_thoughtworks_binding_Binding$ChangedEvent__V(event$1)
-      })
-    })(this, event)))
   }
 });
 $c_Lcom_thoughtworks_binding_Binding$Map.prototype.com$thoughtworks$binding$Binding$Map$$refreshCache__V = (function() {
@@ -8729,96 +9062,6 @@ var $d_sjsr_RuntimeLong = new $TypeData().initClass({
 });
 $c_sjsr_RuntimeLong.prototype.$classData = $d_sjsr_RuntimeLong;
 /** @constructor */
-function $c_LMain$Contact() {
-  $c_O.call(this);
-  this.name$1 = null;
-  this.email$1 = null
-}
-$c_LMain$Contact.prototype = new $h_O();
-$c_LMain$Contact.prototype.constructor = $c_LMain$Contact;
-/** @constructor */
-function $h_LMain$Contact() {
-  /*<skip>*/
-}
-$h_LMain$Contact.prototype = $c_LMain$Contact.prototype;
-$c_LMain$Contact.prototype.productPrefix__T = (function() {
-  return "Contact"
-});
-$c_LMain$Contact.prototype.productArity__I = (function() {
-  return 2
-});
-$c_LMain$Contact.prototype.equals__O__Z = (function(x$1) {
-  if ((this === x$1)) {
-    return true
-  } else if ($is_LMain$Contact(x$1)) {
-    var Contact$1 = $as_LMain$Contact(x$1);
-    var x = this.name$1;
-    var x$2 = Contact$1.name$1;
-    if ((x === x$2)) {
-      var x$3 = this.email$1;
-      var x$4 = Contact$1.email$1;
-      return (x$3 === x$4)
-    } else {
-      return false
-    }
-  } else {
-    return false
-  }
-});
-$c_LMain$Contact.prototype.productElement__I__O = (function(x$1) {
-  switch (x$1) {
-    case 0: {
-      return this.name$1;
-      break
-    }
-    case 1: {
-      return this.email$1;
-      break
-    }
-    default: {
-      throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
-    }
-  }
-});
-$c_LMain$Contact.prototype.toString__T = (function() {
-  return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
-});
-$c_LMain$Contact.prototype.hashCode__I = (function() {
-  var this$2 = $m_s_util_hashing_MurmurHash3$();
-  return this$2.productHash__s_Product__I__I(this, (-889275714))
-});
-$c_LMain$Contact.prototype.productIterator__sc_Iterator = (function() {
-  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
-});
-$c_LMain$Contact.prototype.init___Lcom_thoughtworks_binding_Binding$Var__Lcom_thoughtworks_binding_Binding$Var = (function(name, email) {
-  this.name$1 = name;
-  this.email$1 = email;
-  return this
-});
-function $is_LMain$Contact(obj) {
-  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.LMain$Contact)))
-}
-function $as_LMain$Contact(obj) {
-  return (($is_LMain$Contact(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "Main$Contact"))
-}
-function $isArrayOf_LMain$Contact(obj, depth) {
-  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.LMain$Contact)))
-}
-function $asArrayOf_LMain$Contact(obj, depth) {
-  return (($isArrayOf_LMain$Contact(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "LMain$Contact;", depth))
-}
-var $d_LMain$Contact = new $TypeData().initClass({
-  LMain$Contact: 0
-}, false, "Main$Contact", {
-  LMain$Contact: 1,
-  O: 1,
-  s_Product: 1,
-  s_Equals: 1,
-  s_Serializable: 1,
-  Ljava_io_Serializable: 1
-});
-$c_LMain$Contact.prototype.$classData = $d_LMain$Contact;
-/** @constructor */
 function $c_Lcom_thoughtworks_binding_dom$Runtime$NodeSeqMountPoint() {
   $c_Lcom_thoughtworks_binding_Binding$MultiMountPoint.call(this);
   this.com$thoughtworks$binding$dom$Runtime$NodeSeqMountPoint$$parent$f = null
@@ -8901,6 +9144,139 @@ var $d_Lcom_thoughtworks_binding_dom$Runtime$NodeSeqMountPoint = new $TypeData()
   Lcom_thoughtworks_binding_Binding: 1
 });
 $c_Lcom_thoughtworks_binding_dom$Runtime$NodeSeqMountPoint.prototype.$classData = $d_Lcom_thoughtworks_binding_dom$Runtime$NodeSeqMountPoint;
+/** @constructor */
+function $c_Lme_yuanqingfei_daigou_Main$Order() {
+  $c_O.call(this);
+  this.date$1 = null;
+  this.client$1 = null;
+  this.goods$1 = null;
+  this.completed$1 = false;
+  this.sellPrice$1 = 0.0;
+  this.goodsPrice$1 = 0.0;
+  this.transferPrice$1 = 0.0;
+  this.profit$1 = 0.0;
+  this.profitPercent$1 = 0.0
+}
+$c_Lme_yuanqingfei_daigou_Main$Order.prototype = new $h_O();
+$c_Lme_yuanqingfei_daigou_Main$Order.prototype.constructor = $c_Lme_yuanqingfei_daigou_Main$Order;
+/** @constructor */
+function $h_Lme_yuanqingfei_daigou_Main$Order() {
+  /*<skip>*/
+}
+$h_Lme_yuanqingfei_daigou_Main$Order.prototype = $c_Lme_yuanqingfei_daigou_Main$Order.prototype;
+$c_Lme_yuanqingfei_daigou_Main$Order.prototype.productPrefix__T = (function() {
+  return "Order"
+});
+$c_Lme_yuanqingfei_daigou_Main$Order.prototype.productArity__I = (function() {
+  return 9
+});
+$c_Lme_yuanqingfei_daigou_Main$Order.prototype.equals__O__Z = (function(x$1) {
+  if ((this === x$1)) {
+    return true
+  } else if ($is_Lme_yuanqingfei_daigou_Main$Order(x$1)) {
+    var Order$1 = $as_Lme_yuanqingfei_daigou_Main$Order(x$1);
+    return (((((((((this.date$1 === Order$1.date$1) && (this.client$1 === Order$1.client$1)) && (this.goods$1 === Order$1.goods$1)) && (this.completed$1 === Order$1.completed$1)) && (this.sellPrice$1 === Order$1.sellPrice$1)) && (this.goodsPrice$1 === Order$1.goodsPrice$1)) && (this.transferPrice$1 === Order$1.transferPrice$1)) && (this.profit$1 === Order$1.profit$1)) && (this.profitPercent$1 === Order$1.profitPercent$1))
+  } else {
+    return false
+  }
+});
+$c_Lme_yuanqingfei_daigou_Main$Order.prototype.productElement__I__O = (function(x$1) {
+  switch (x$1) {
+    case 0: {
+      return this.date$1;
+      break
+    }
+    case 1: {
+      return this.client$1;
+      break
+    }
+    case 2: {
+      return this.goods$1;
+      break
+    }
+    case 3: {
+      return this.completed$1;
+      break
+    }
+    case 4: {
+      return this.sellPrice$1;
+      break
+    }
+    case 5: {
+      return this.goodsPrice$1;
+      break
+    }
+    case 6: {
+      return this.transferPrice$1;
+      break
+    }
+    case 7: {
+      return this.profit$1;
+      break
+    }
+    case 8: {
+      return this.profitPercent$1;
+      break
+    }
+    default: {
+      throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
+    }
+  }
+});
+$c_Lme_yuanqingfei_daigou_Main$Order.prototype.toString__T = (function() {
+  return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
+});
+$c_Lme_yuanqingfei_daigou_Main$Order.prototype.init___T__T__T__Z__D__D__D__D__D = (function(date, client, goods, completed, sellPrice, goodsPrice, transferPrice, profit, profitPercent) {
+  this.date$1 = date;
+  this.client$1 = client;
+  this.goods$1 = goods;
+  this.completed$1 = completed;
+  this.sellPrice$1 = sellPrice;
+  this.goodsPrice$1 = goodsPrice;
+  this.transferPrice$1 = transferPrice;
+  this.profit$1 = profit;
+  this.profitPercent$1 = profitPercent;
+  return this
+});
+$c_Lme_yuanqingfei_daigou_Main$Order.prototype.hashCode__I = (function() {
+  var acc = (-889275714);
+  acc = $m_sr_Statics$().mix__I__I__I(acc, $m_sr_Statics$().anyHash__O__I(this.date$1));
+  acc = $m_sr_Statics$().mix__I__I__I(acc, $m_sr_Statics$().anyHash__O__I(this.client$1));
+  acc = $m_sr_Statics$().mix__I__I__I(acc, $m_sr_Statics$().anyHash__O__I(this.goods$1));
+  acc = $m_sr_Statics$().mix__I__I__I(acc, (this.completed$1 ? 1231 : 1237));
+  acc = $m_sr_Statics$().mix__I__I__I(acc, $m_sr_Statics$().doubleHash__D__I(this.sellPrice$1));
+  acc = $m_sr_Statics$().mix__I__I__I(acc, $m_sr_Statics$().doubleHash__D__I(this.goodsPrice$1));
+  acc = $m_sr_Statics$().mix__I__I__I(acc, $m_sr_Statics$().doubleHash__D__I(this.transferPrice$1));
+  acc = $m_sr_Statics$().mix__I__I__I(acc, $m_sr_Statics$().doubleHash__D__I(this.profit$1));
+  acc = $m_sr_Statics$().mix__I__I__I(acc, $m_sr_Statics$().doubleHash__D__I(this.profitPercent$1));
+  return $m_sr_Statics$().finalizeHash__I__I__I(acc, 9)
+});
+$c_Lme_yuanqingfei_daigou_Main$Order.prototype.productIterator__sc_Iterator = (function() {
+  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+function $is_Lme_yuanqingfei_daigou_Main$Order(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lme_yuanqingfei_daigou_Main$Order)))
+}
+function $as_Lme_yuanqingfei_daigou_Main$Order(obj) {
+  return (($is_Lme_yuanqingfei_daigou_Main$Order(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "me.yuanqingfei.daigou.Main$Order"))
+}
+function $isArrayOf_Lme_yuanqingfei_daigou_Main$Order(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lme_yuanqingfei_daigou_Main$Order)))
+}
+function $asArrayOf_Lme_yuanqingfei_daigou_Main$Order(obj, depth) {
+  return (($isArrayOf_Lme_yuanqingfei_daigou_Main$Order(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lme.yuanqingfei.daigou.Main$Order;", depth))
+}
+var $d_Lme_yuanqingfei_daigou_Main$Order = new $TypeData().initClass({
+  Lme_yuanqingfei_daigou_Main$Order: 0
+}, false, "me.yuanqingfei.daigou.Main$Order", {
+  Lme_yuanqingfei_daigou_Main$Order: 1,
+  O: 1,
+  s_Product: 1,
+  s_Equals: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lme_yuanqingfei_daigou_Main$Order.prototype.$classData = $d_Lme_yuanqingfei_daigou_Main$Order;
 /** @constructor */
 function $c_Lscalaz_Applicative$$anon$5() {
   $c_O.call(this);
@@ -12278,27 +12654,14 @@ $c_Lcom_thoughtworks_binding_dom$Runtime$TagsAndTags2$.prototype.tbody$lzycomput
   };
   return this.tbody$1
 });
-$c_Lcom_thoughtworks_binding_dom$Runtime$TagsAndTags2$.prototype.button__Lscalatags_JsDom$TypedTag = (function() {
+$c_Lcom_thoughtworks_binding_dom$Runtime$TagsAndTags2$.prototype.th__Lscalatags_JsDom$TypedTag = (function() {
   var b = this.bitmap$1$1;
-  var hi = (256 & b.hi$2);
+  var hi = (4 & b.hi$2);
   if ((hi === 0)) {
-    return this.button$lzycompute__p1__Lscalatags_JsDom$TypedTag()
+    return this.th$lzycompute__p1__Lscalatags_JsDom$TypedTag()
   } else {
-    return this.button$1
+    return this.th$1
   }
-});
-$c_Lcom_thoughtworks_binding_dom$Runtime$TagsAndTags2$.prototype.button$lzycompute__p1__Lscalatags_JsDom$TypedTag = (function() {
-  var b = this.bitmap$1$1;
-  var hi = (256 & b.hi$2);
-  if ((hi === 0)) {
-    var ns = $m_Lscalatags_generic_Namespace$().htmlNamespaceConfig$1;
-    this.button$1 = $as_Lscalatags_JsDom$TypedTag($f_Lscalatags_jsdom_TagFactory__typedTag__T__Z__Lscalatags_generic_Namespace__Lscalatags_generic_TypedTag(this, "button", false, ns));
-    var b$1 = this.bitmap$1$1;
-    var lo = b$1.lo$2;
-    var hi$1 = (256 | b$1.hi$2);
-    this.bitmap$1$1 = new $c_sjsr_RuntimeLong().init___I__I(lo, hi$1)
-  };
-  return this.button$1
 });
 $c_Lcom_thoughtworks_binding_dom$Runtime$TagsAndTags2$.prototype.table$lzycompute__p1__Lscalatags_JsDom$TypedTag = (function() {
   var b = this.bitmap$1$1;
@@ -12321,6 +12684,19 @@ $c_Lcom_thoughtworks_binding_dom$Runtime$TagsAndTags2$.prototype.table__Lscalata
   } else {
     return this.table$1
   }
+});
+$c_Lcom_thoughtworks_binding_dom$Runtime$TagsAndTags2$.prototype.th$lzycompute__p1__Lscalatags_JsDom$TypedTag = (function() {
+  var b = this.bitmap$1$1;
+  var hi = (4 & b.hi$2);
+  if ((hi === 0)) {
+    var ns = $m_Lscalatags_generic_Namespace$().htmlNamespaceConfig$1;
+    this.th$1 = $as_Lscalatags_JsDom$TypedTag($f_Lscalatags_jsdom_TagFactory__typedTag__T__Z__Lscalatags_generic_Namespace__Lscalatags_generic_TypedTag(this, "th", false, ns));
+    var b$1 = this.bitmap$1$1;
+    var lo = b$1.lo$2;
+    var hi$1 = (4 | b$1.hi$2);
+    this.bitmap$1$1 = new $c_sjsr_RuntimeLong().init___I__I(lo, hi$1)
+  };
+  return this.th$1
 });
 var $d_Lcom_thoughtworks_binding_dom$Runtime$TagsAndTags2$ = new $TypeData().initClass({
   Lcom_thoughtworks_binding_dom$Runtime$TagsAndTags2$: 0
@@ -19204,6 +19580,6 @@ var $d_scm_IndexedSeqView$$anon$2 = new $TypeData().initClass({
   sc_TraversableViewLike$Sliced: 1
 });
 $c_scm_IndexedSeqView$$anon$2.prototype.$classData = $d_scm_IndexedSeqView$$anon$2;
-$e.Main = $m_LMain$();
+$e.Main = $m_Lme_yuanqingfei_daigou_Main$();
 }).call(this);
 //# sourceMappingURL=js-fastopt.js.map

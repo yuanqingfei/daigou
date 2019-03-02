@@ -15,7 +15,7 @@ indexHtml := {
       <header>
         <nav role="navigation">
           <div class="nav-wrapper container">
-            <a href="#" class="brand-logo">Order List</a>
+            <a href="#" class="brand-logo">订单维护系统</a>
           </div>
         </nav>
       </header>

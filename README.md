@@ -2,8 +2,8 @@
 
 Try to write a web app can be used create an order.
 
-```scala
-sbt indexHtml
+```bash
+JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8 sbt ~indexHtml
 ```
 
 ## 2018/12/02
