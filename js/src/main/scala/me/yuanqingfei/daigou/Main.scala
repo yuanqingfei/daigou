@@ -1,14 +1,14 @@
 package me.yuanqingfei.daigou
 
-import com.thoughtworks.binding.{Binding, Route, dom}
-import com.thoughtworks.binding.Binding.{BindingSeq, Var, Vars}
+import com.thoughtworks.binding._
+import com.thoughtworks.binding.Binding._
 
 import scala.scalajs.js.annotation.{JSExport, JSExportTopLevel}
 import org.scalajs.dom.{Event, KeyboardEvent, window}
 import org.scalajs.dom.ext.{KeyCode, LocalStorage}
 import org.scalajs.dom.raw.{HTMLInputElement, Node}
 
-import org.scalajs.dom.html.{Table, TableRow}
+import org.scalajs.dom.html.{Div, Table, TableRow, Button, Element}
 
 import upickle.default.{read, write}
 import upickle.default.{ReadWriter => RW, macroRW}
@@ -23,29 +23,9 @@ object Main{
         profit: Double, profitPercent: Double)
     object Order{
         implicit val rw: RW[Order] = macroRW
-        // def apply(date: Date, client: String, goods: String, status: Boolean, 
-        //     sellPrice:Double, goodsPrice:Double, transferPrice:Double, 
-        //     profit: Double, profitPercent: Double) = new Order(date, client, goods, status,
-        //     sellPrice, goodsPrice, transferPrice, profit, profitPercent)
-
-        // def unapply(order: Order) = Option((order.date, order.client, order.goods,
-        //     order.status, order.sellPrice, order.goodsPrice, order.transferPrice,
-        //     order.profit, order.profitPercent))
     }
-
-    Vars 
-    
+   
     final case class OrderList(text: String, hash: String, items: BindingSeq[Order])
-    // @dom
-    // def bindingButton(contact: Contact): Binding[Button] = {
-    //     <button
-    //         onclick={ event: Event =>
-    //         contact.name.value = "Modified Name"
-    //         }
-    //     >
-    //     Modify the name
-    //     </button>
-    // }
 
     object Models {
         val LocalStorageName = "daigou-orders"
@@ -88,19 +68,45 @@ object Main{
     }
 
     @dom
+    def bindingDeleteBn(order: Order): Binding[Button] = {
+        <button onclick={event: Event => allOrders.value.remove(allOrders.value.indexOf(order)) }>
+            删除
+        </button>
+    }
+
+    // @dom
+    // def bindingEditBn(order: Order): Binding[Button] = {
+    //     <button onclick={event: Event => editingOrder.value = Some(order); dateInput.focus()}>
+    //         更改
+    //     </button>
+    // }
+
+    @dom
     def bindingTr(order: Order): Binding[TableRow] = {
+        // def submit = { event: Event =>
+        //     editingOrder.value = None
+        //     event.currentTarget.asInstanceOf[HTMLInputElement].value.trim match {
+        //         case "" =>
+        //         allOrders.value.remove(allTodos.value.indexOf(order))
+        //         case trimmedTitle =>
+        //         allOrders.value(allOrders.value.indexOf(order)) = Order(trimmedTitle, todo.completed)
+        //     }
+        // }
+
+        def onEdit = {
+            event: Event=> event.currentTarget.asInstanceOf[Element].contentEditable = "true"
+        }
         <tr>
-            <td>
-                { order.date }
-            </td>
-            <td>{ order.client }</td>
-            <td>{ order.goods }</td>
+            <td>{ order.date }</td>
+            <td ondblclick={onEdit}>{ order.client }</td>
+            <td ondblclick={onEdit}>{ order.goods }</td>
             <td>{ if (order.completed) "completed" else "processing" }</td>
-            <td>{ order.sellPrice.toString }</td>
-            <td>{ order.goodsPrice.toString }</td>
-            <td>{ order.transferPrice.toString }</td>
+            <td ondblclick={onEdit}>{ order.sellPrice.toString }</td>
+            <td ondblclick={onEdit}>{ order.goodsPrice.toString }</td>
+            <td ondblclick={onEdit}>{ order.transferPrice.toString }</td>
             <td>{ order.profit.toString }</td>
             <td>{ order.profitPercent.toString }</td>
+            <td>{ bindingDeleteBn(order).bind }</td>
         </tr>
     }
 
@@ -118,12 +124,32 @@ object Main{
         </table>
     }
 
+    @dom
+    def bindingCreateNewBtn() :Binding[Button] = {
+        <button>
+            新建订单
+        </button>
+    }
+
+    @dom
+    def bindingTopDiv(orders: BindingSeq[Order]): Binding[Div] = {
+        <div>
+            <div>{bindingCreateNewBtn.bind}</div>
+            <div>
+                {bindingTable(orders).bind}
+            </div>
+        </div>
+    }
+
     @JSExport def main(container: Node) = {
         // val data = Vars(Order(Var(new Date), Var("testClient"), Var("testGoods"), Var(120), 
         //     Var(100), Var(10), Var(10), Var(0.1)))
-        val data = Vars(Order("2019/03/01", "testClient", "testGoods", true, 120, 
-            100, 10, 10, 0.1))
-        dom.render(container, bindingTable(data))
+        val data = List(Order("2019/03/01", "testClient", "testGoods", true, 120,100, 10, 10, 0.1),
+                        Order("2019/03/02", "testClient", "testGoods", true, 120,100, 10, 10, 0.1))
+        
+        save(data)
+
+        dom.render(container, bindingTopDiv(allOrders))
     }
 
 }

@@ -7,9 +7,9 @@ indexHtml := {
   val document = <html lang="en" data-framework="binding-scala">
     <head>
       <meta charset="UTF-8" />
-      <title>Binding.scala Deposit Calculator</title>
+      <title>订单维护系统</title>
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
     </head>
     <body>
       <header>
@@ -24,7 +24,7 @@ indexHtml := {
       </main>
       <footer class="page-footer">
         <div class="container white-text">
-          For Test
+          仅供测试
         </div>
         <div class="footer-copyright">
           <div class="container">
